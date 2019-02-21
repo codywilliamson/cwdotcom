@@ -1,0 +1,305 @@
+/*
+
+COLORS:
+  Slate: #262626
+  Secondhand Grey: #3f3f3f
+  Whitish: #f5f5f5
+  Light Grey: #dcdcdc
+
+LOG:
+  Wed. 3AM 02/20: done with navbar, working on adding homebg img to background of home page.
+  Wed. 7PM 02/20: done with landing, about page. need to work on mobile responsiveness; however, complete contact form and footer first.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+/* Navbar styling */
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #262626;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+}
+.nav-link {
+  display: flex;
+  padding: 20px 30px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #dcdcdc;
+}
+
+.nav-link a:hover {
+  color: #f5f5f5;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.nav-link a:active {
+  color: #f5f5f5;
+  font-size: 1.1em;
+  font-weight: 400;
+  background-color: #3f3f3f;
+}
+
+/* Home Page styling */
+
+.home {
+  background: url('assets/homeBg.jpg') #3f3f3f;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px;
+  text-align: center;
+}
+.title {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 35%;
+  color: #262626;
+  margin-top: -30px;
+}
+
+.tagline {
+  font-size: 30px;
+}
+.tagline a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.tagline a:hover {
+  font-size: 35px;
+}
+
+.learn-more {
+  font-size: 50px;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 80px;
+}
+
+.hero {
+  margin: 0 auto;
+}
+
+/* About section styling */
+
+.about {
+  background: #f5f5f5;
+  padding: 50px 200px 100px 200px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.subtitle {
+  padding-bottom: 50px;
+}
+
+.portrait {
+  height: 350px;
+  width: 350px;
+  max-width: 400px;
+  max-width: 400px;
+  border-radius: 360%;
+}
+
+.left {
+  /* padding-right: 75px; */
+  width: 100%;
+  padding-bottom: 50px;
+  /* background-color: black; */
+}
+
+.aboutme {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  padding-left: 45px;
+  padding-right: 45px;
+  text-align: left;
+/*  background-color: red; */
+}
+
+/* Contact Form styling */
+
+.contact {
+  background-color: #3f3f3f;
+  padding: 50px;
+  text-align: center;
+}
+
+.form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.feedback {
+  color: #262626;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #ffffff;
+  border: 2px solid #dcdcdc;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  outline: 0;
+}
+
+.feedback:focus {
+  border: 2px solid #3f3f3f;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #262626;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #f5f5f5;
+  margin-left: 10px;
+  font-size: 24px;
+  padding: 10px;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #dcdcdc;
+  color: #262626;
+}
+
+/* footer styling */
+
+.navbar-footer {
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+/* Mobile Responsiveness */
+
+@media only screen and (min-width: 768px) {
+  .home, .about, .contact {
+    margin-right: -40px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .navbar {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  .navigation {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+  }
+
+  .home {
+    padding: 100px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .tagline {
+    font-size: 20px;
+  }
+
+  .portrait {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about {
+    padding: 30px;
+  }
+
+  .aboutme {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: none;
+    border-right: none;
+  }
+
+  .contact {
+    padding: 20px 20px 20px -5px;
+  }
+
+  .feedback {
+    padding: 5px;
+  }
+
+  .navbar-footer {
+    width: 85%;
+    padding-right: 10px;
+    flex-flow: row wrap;
+  }
+
+  .nav-link {
+    padding: 5px;
+  }
+}
