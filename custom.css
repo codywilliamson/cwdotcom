@@ -223,13 +223,22 @@ textarea {
   bottom: 0;
 }
 
-/* Mobile Responsiveness */
+/* Responsiveness */
 
 @media only screen and (min-width: 768px) {
   .home, .about, .contact {
     margin-right: -40px;
   }
 }
+
+@media only screen and (min-width: 2560px) {
+  .about {
+    padding-right: 500px;
+    padding-left: 500px;
+    font-size: 25px;
+  }
+}
+
 
 @media only screen and (max-width: 425px) {
   .logo {
@@ -295,7 +304,7 @@ textarea {
 
   .navbar-footer {
     width: 85%;
-    padding-right: 10px;
+    padding-right: 23px;
     flex-flow: row wrap;
   }
 
