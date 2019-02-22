@@ -95,7 +95,7 @@ body {
   font-weight: bold;
 }
 
-/* .typewriter {
+.typewriter {
   overflow: hidden;
   border-right: .15em solid #262626;
   white-space: nowrap;
@@ -124,7 +124,7 @@ body {
   @keyframes blink-caret {
     from, to {border-color: transparent}
     50% {border-color: #262626}
-  } */
+  }
 
 /*
 .underline {
@@ -318,6 +318,10 @@ textarea {
 
   .title {
     font-size: 25px;
+  }
+
+  .typewriter {
+    white-space: normal;
   }
 
   .tagline {
