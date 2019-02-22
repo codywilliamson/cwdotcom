@@ -9,8 +9,13 @@
   </head>
   <body>
     <nav class="navigation">
+      <!--
+        hamburger icon for later
+        <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span> -->
       <img class="logo" src="assets/logo.jpg" alt="Cody Williamson's Logo">
-      <ul class="navbar" role="navigation">
+      <ul class="navbar" id="js-menu" role="navigation">
         <li class="nav-link"><a href="#Home">Home</a></li>
         <li class="nav-link"><a href="#About">About</a></li>
         <li class="nav-link"><a href="#Contact">Contact</a></li>
@@ -32,7 +37,7 @@
             </div>
             <div class="aboutme">
               <p>
-                Cody Williamson is an aspiring web developer who succeeds in personal development, web design, and customer service. He has self taught himself web technologies such as HTML, CSS and JavaScript. He is a customer service professional having been in a customer service specialist role for the last 5 years. He hopes to one day finally don the "Web Dev" official title.
+                Cody Williamson is an aspiring web developer who succeeds in personal development, web design, and customer service. He has self taught himself essential front end web technologies such as HTML, CSS and JavaScript. He is a customer service professional having been in a customer service specialist role for the last 5 years. He hopes to one day finally don the "Web Dev" official title.
               </p>
               <p>
                 He fills his free time spending time with his wife and son, learning web development, writing, and working. He is also pursuing his Bachelors of Computer Science, with hopes to graduate in 2020.
@@ -64,4 +69,39 @@
     </main>
 
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  /* for hamburger menu -- revisit later after deeper understanding
+      of js
+
+  let navBar = document.getElementById('js-menu');
+
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+
+  navBarToggle.addEventListener('click', function() {
+    navBar.classList.toggle('active');
+  }) */
+});
+  </script>
 </html>
