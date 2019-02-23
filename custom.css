@@ -197,7 +197,7 @@ body {
   padding-left: 45px;
   padding-right: 45px;
   text-align: left;
-/*  background-color: red; */
+/*  background-color: red; for flex troubleshooting, easier to see div */
 }
 
 /* Contact Form styling */
@@ -277,12 +277,6 @@ textarea {
 
 /* Responsiveness */
 
-@media only screen and (min-width: 768px) {
-  .home, .about, .contact {
-    margin-right: -40px;
-  }
-}
-
 @media only screen and (min-width: 2560px) {
   .about {
     padding-right: 500px;
@@ -291,6 +285,11 @@ textarea {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .home, .about, .contact {
+    margin-right: -40px;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   .logo {
