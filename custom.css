@@ -17,6 +17,11 @@ html, body {
   /* scroll-behavior: smooth; */
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 body {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
@@ -95,6 +100,14 @@ body {
   font-weight: bold;
 }
 
+/*
+  removing animation for now, was more of a practice use of animations
+  but i don't think it was a solid design choice for my website.
+  I'm keeping the code for now because I might revisit this in the future.
+  I had issues with the text being cut off on smaller screens, and the
+  caret extending way passed the text. it was experiential learning
+  about animations, but on to js.
+
 .typewriter {
   overflow: hidden;
   border-right: .15em solid #262626;
@@ -124,7 +137,7 @@ body {
   @keyframes blink-caret {
     from, to {border-color: transparent}
     50% {border-color: #262626}
-  }
+  } */
 
 /*
 .underline {
@@ -319,16 +332,8 @@ textarea {
     font-size: 25px;
   }
 
-  .typewriter {
-    white-space: normal;
-  }
-
   .tagline {
-    font-size: 20px;
-  }
-
-  .underline {
-    display: none;
+    font-size: 15px;
   }
 
   .portrait {
@@ -369,21 +374,12 @@ textarea {
 }
 
 @media only screen and (max-width: 320px) {
-  .typewriter {
-    letter-spacing: .07em;
-    border-right: .09em solid #262626;
-    -webkit-animation:
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
+
+  footer {
+    margin-right: 12px;
   }
 
-  @-webkit-keyframes typing {
-    from {width: 0}
-    to {width: 120%}
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 120% }
+  .contact {
+    margin-right: -6px;
   }
 }
