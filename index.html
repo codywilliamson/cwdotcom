@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css" />
+    <script type="text/javascript" src="scripts.js" defer></script>
     <title>Cody Williamson's Portfolio</title>
   </head>
   <body>
-    <nav class="navigation">
-      <!--
-        hamburger icon for later
-        <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span> -->
-      <a href="#Home"><img class="logo" src="assets/logo.jpg" alt="Cody Williamson's Logo"></a>
-      <ul class="navbar" id="js-menu" role="navigation">
-        <li class="nav-link"><a href="#Home">Home</a></li>
-        <li class="nav-link"><a href="#About">About</a></li>
-        <li class="nav-link"><a href="#Contact">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navigation">
+        <div class="logo">
+          <h1>C. Williamson</h1>
+          <!-- <a href="#Home">
+            <img class="logo" src="assets/logo.jpg" alt="Cody Williamson's Logo">
+          </a> -->
+        </div>
+        <ul class="nav-links" role="navigation">
+          <li class="nav-link"><a href="#Home">Home</a></li>
+          <li class="nav-link"><a href="#About">About</a></li>
+          <li class="nav-link"><a href="#Contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
     <main class="container">
       <div class="home" id="Home">
           <h1 class="title typewriter">Cody Williamson</h1>
@@ -47,7 +55,7 @@
         </div>
       </section>
       <section class="contact" id="Contact">
-        <h2>Contact Me</h2>
+        <h2 class="subtitle">Contact Me</h2>
           <form class="form" action="https://formspree.io/codywscw@gmail.com" method="POST">
             <input class="feedback" type="text" name="name" placeholder="Name">
             <input class="feedback" type="email" name="email" placeholder="Email">
@@ -68,41 +76,10 @@
       </footer>
 
     </main>
+    <script type="text/javascript">
+
+    </script>
 
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  /* for hamburger menu -- revisit later after deeper understanding
-      of js
-
-  let navBar = document.getElementById('js-menu');
-
-  let navBarToggle = document.getElementById('js-navbar-toggle');
-
-  navBarToggle.addEventListener('click', function() {
-    navBar.classList.toggle('active');
-  }) */
-});
-  </script>
 </html>

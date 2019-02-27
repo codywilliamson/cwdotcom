@@ -7,13 +7,15 @@ COLORS:
   Light Grey: #dcdcdc
 
 */
-
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* scroll-behavior: smooth; */
 }
 
@@ -29,42 +31,44 @@ body {
 }
 
 /* Navbar styling */
-.logo {
-  height: 85px;
-  width: 85px;
-  border-radius: 100%;
-}
-
 .navigation {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
   background: #262626;
   text-transform: uppercase;
-  position: fixed;
-  width: 100%;
 }
 
-/*
-  will add hamburger menu later when I understand js better lol
-
-.navbar-toggle {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
+.logo {
+  letter-spacing: 3px;
+  font-family: 'Indie Flower', cursive;
   color: #f5f5f5;
-  font-size: 24px;
-  display: none;
+  font-size: 20px;
 }
-*/
 
-.navbar {
+.nav-links {
   display: flex;
+  justify-content: space-around;
+  width: 40%;
+  letter-spacing: 3px;
 }
+
 .nav-link {
-  display: flex;
-  padding: 20px 30px;
+  list-style: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 30px;
+  height: 4px;
+  margin: 5px;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
 }
 
 .nav-link a {
@@ -299,6 +303,63 @@ textarea {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: #262626;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      transform: translateX(100%);
+    }
+
+    .nav-link {
+      opacity: 0;
+    }
+
+    .burger {
+      display: block;
+    }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  transition: transform 0.5s ease-in;
+
+}
+
+@keyframes navLinkFade {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
+
+}
+
 @media only screen and (min-width: 768px) {
   .home, .about, .contact {
     margin-right: -40px;
@@ -306,25 +367,9 @@ textarea {
 }
 
 @media only screen and (max-width: 425px) {
-  .logo {
-    height: 70px;
-    width: 70px;
+  .nav-links {
+    height: 95vh;
   }
-
-  .navbar {
-    font-size: 20px;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 5px;
-  }
-
-  .navigation {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    position: relative;
-    width: 100%;
-  }
-
   .home {
     padding: 100px;
   }
