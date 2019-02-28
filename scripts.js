@@ -20,7 +20,13 @@ const navSlide = () => {
 
     //burger animation
     burger.classList.toggle('toggle');
+    ( '.nav-link a' ).on("click", function(){
+          nav.removeClass('nav-active');
+        });
 
+        ( '.nav-link a' ).on("click", function(){
+          nav.removeClass('nav-active');
+        });
     });
 }
 
