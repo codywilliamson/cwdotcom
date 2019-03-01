@@ -66,7 +66,7 @@ body {
 }
 
 .burger div {
-  width: 35px;
+  width: 36px;
   height: 4px;
   margin: 5px;
   background-color: #f5f5f5;
@@ -372,13 +372,13 @@ textarea {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 5px);
 }
 .toggle .line2 {
   opacity: 0;
 }
 .toggle .line3 {
-  transform: rotate(45deg) translate(-6px, -5px);
+  transform: rotate(45deg) translate(-5px, -5px);
 
 }
 
@@ -389,10 +389,6 @@ textarea {
 }
 
 @media only screen and (max-width: 425px) {
-
-  .navigation h1 {
-    font-size: 20px;
-  }
 
   .home {
     padding: 100px;
