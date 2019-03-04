@@ -1,32 +1,23 @@
-
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-
-    burger.addEventListener('click',()=> {
-      // Toggle nav
-      nav.classList.toggle('nav-active');
-
-      // Animate links
-      navLinks.forEach((link,index) => {
-        if (link.style.animation) {
-          link.style.aniamtion = ``;
-        } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-      };
-    });
-
-    //burger animation
-    burger.classList.toggle('toggle');
-    ( '.nav-link a' ).on("click", function(){
-          nav.removeClass('nav-active');
-        });
-
-        ( '.nav-link a' ).on("click", function(){
-          nav.removeClass('nav-active');
-        });
-    });
-};
-
-navSlide();
+(function($) {
+  $(function() { //DOM ready
+    // target any a in the menu that has any children, then toggle .nav-dropdown class
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // prevents all dropdowns opening when only one is clicked
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    }); // end prevent dropdowns
+    // hide if click away
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    }); // end hide
+    // toggle open, close styles on nav
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    }); // end toggle
+    // toggle hamburger
+     $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    }); // end toggle hamburger
+  });
+ })(jQuery);
