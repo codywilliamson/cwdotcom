@@ -36,7 +36,7 @@ body {
   letter-spacing: 3px;
   font-family: 'Raleway', sans-serif;
   color: #f5f5f5;
-  font-size: 20px;
+  font-size: 1.05em;
 }
 
 .navigation {
@@ -281,7 +281,7 @@ nav ul li ul li a {
 
 .about {
   background: #ffffff;
-  padding: 100px;
+  padding: 60px;
   text-align: center;
 }
 
@@ -298,8 +298,8 @@ nav ul li ul li a {
 }
 
 .logo-img {
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   border-radius: 360%;
 }
 
@@ -311,16 +311,44 @@ nav ul li ul li a {
 }
 
 .aboutme {
-  border-left: 2px solid #000;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 20px 60px;
   text-align: left;
+  -webkit-box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
+  -moz-box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
+  box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
+}
+.aboutme:hover {
+  transform: scale(1.05);
 }
 
 .aboutme a {
   text-decoration: none;
   color: #262626;
   border-bottom: 1px solid #262626;
+}
+
+/* Services */
+.services {
+  background-color: #dcdcdc;
+  color: #262626;
+  text-align: center;
+  padding: 200px 50px;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #262626;
+  margin: 10px;
+  height: 300px;
+  padding: 10px 30px;
+  width: 500px;
+  -webkit-box-shadow: 0px 24px 80px -28px rgba(38,38,38,1);
+  -moz-box-shadow: 0px 24px 80px -28px rgba(38,38,38,1);
+  box-shadow: 0px 24px 80px -28px rgba(38,38,38,1);
+}
+
+.card-title {
+  padding-bottom: 35px;
 }
 
 /* Contact Form styling */
@@ -396,6 +424,12 @@ textarea {
   padding-bottom: 15px;
   top: 0;
   bottom: 0;
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .copyright {
@@ -423,8 +457,8 @@ textarea {
     }
 
     .logo-img {
-      height: 150px;
-      width: 150px;
+      height: 200px;
+      width: 200px;
     }
 }
 
@@ -435,6 +469,10 @@ textarea {
 }
 
 @media only screen and (max-width: 425px) {
+
+  .logo {
+    font-size: 0.8em;
+  }
 
   .home {
     padding: 100px;
@@ -464,10 +502,6 @@ textarea {
   .aboutme {
     padding-right: 20px;
     padding-left: 20px;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    border-left: none;
-    border-right: none;
   }
 
   .contact {

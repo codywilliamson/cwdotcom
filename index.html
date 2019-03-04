@@ -14,6 +14,7 @@
     <title>Cody Williamson's Portfolio</title>
   </head>
   <body>
+    <!-- NAVBAR -->
       <section class="navigation">
         <div class="nav-container">
           <div class="brand">
@@ -26,21 +27,39 @@
           <ul class="nav-list">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#!">Contact</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="https://github.com/codywilliamson" target="_blank">
+                    <i class="fab fa-github"></i> GitHub</a>
+                </li>
+                <li>
+                  <a href="https://facebook.com/cody.www" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#Contact" target="_blank">
+                    <i class="fas fa-at"></i> Email</a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
         </div>
-    </section>
+    </section> <!-- end NAVBAR -->
+    <!-- HOME page -->
     <main class="container">
       <div class="home" id="Home">
           <h1 class="title typewriter">Cody Williamson</h1>
           <!-- <hr class="underline"> -->
           <h4 class="tagline">Let's build <a href="#Contact">something</a> together.</h4>
           <a href="#About" class="learn-more"><i class="fa fa-angle-down learn-more" aria-hidden="true"></i></a>
-      </div>
+      </div> <!-- end HOME -->
 
+    <!-- ABOUT page -->
       <section class="about" id="About">
-        <h1 class="subtitle">About Me</h1>
+        <h2 class="subtitle">About Me</h1>
           <div class="wrapper">
             <div class="left">
               <img class="logo-img" src="assets/logo.jpg" alt="Cody Williamson's Logo">
@@ -57,7 +76,37 @@
               </p>
             </div>
         </div>
+      </section> <!-- end ABOUT -->
+
+      <!-- SERVICES page -->
+      <section class="services" id="Services">
+        <h2 class="subtitle">Services</h2>
+        <div class="wrapper">
+          <div class="card">
+            <h3 class="card-title"><i class="fas fa-crop"></i> Design</h3>
+            <p class="card-info">
+              Using modern web design methodologies, I'll design an end product catered to your vision.
+              Or I can take whatever design you provide and bring it to life.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title"><i class="fab fa-connectdevelop"></i> Develop</h3>
+            <p class="card-info">
+              HTML/CSS/JavaScript&JQuery will be the foundation. Want to add content yourself?
+              I can build your site ontop of WordPress, too.
+            </p>
+          </div>
+          <div class="card">
+            <h3 class="card-title"><i class="fas fa-plus"></i> Create</h3>
+            <p class="card-info">
+              Working together, we'll create a product you'll love. Your satisfaction is
+              my number one priority.
+            </p>
+          </div>
+        </div>
       </section>
+
+      <!-- CONTACT page -->
       <section class="contact" id="Contact">
         <h2 class="subtitle">Contact Me</h2>
           <form class="form" action="https://formspree.io/codywscw@gmail.com" method="POST">
@@ -66,8 +115,9 @@
             <textarea class="feedback" name="text" placeholder="What do you need?"></textarea>
             <input type="submit" name="submit" value="SUBMIT">
           </form>
-      </section>
+      </section> <!-- end CONTACT -->
 
+      <!-- FOOTER NAV -->
       <footer class="footer">
         <div class="flex-container">
           <ul class="navbar-footer">
@@ -77,7 +127,7 @@
             <li class="nav-link copyright">Copyright @ Cody Williamson</li>
           </ul>
         </div>
-      </footer>
+      </footer> <!-- end footer nav -->
 
     </main>
   </body>
