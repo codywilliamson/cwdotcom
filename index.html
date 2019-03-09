@@ -1,62 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- FOR TESTING ONLY
-    <meta http-equiv="refresh" content="10" >
-     COMMENT OUT ON RELEASE -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts.js" defer></script>
-    <title>Cody Williamson's Portfolio</title>
-  </head>
-  <body>
-    <div class="page-wrapper">
-    <!-- NAVBAR -->
-      <section class="navigation">
-        <div class="nav-container">
-          <div class="brand">
-            <a href="#!"><span class="logo">C. Williamson</span></a>
-          </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
-          </div>
-          <ul class="nav-list">
-            <li class="home-link"><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#!">Contact</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="https://github.com/codywilliamson" target="_blank">
-                    <i class="fab fa-github fa-fw"></i> GitHub</a>
-                </li>
-                <li>
-                  <a href="https://facebook.com/cody.www" target="_blank">
-                    <i class="fab fa-facebook-f fa-fw"></i> Facebook</a>
-                </li>
-                <li>
-                  <a href="https://codepen.io/codecody/" target="_blank">
-                    <i class="fab fa-codepen fa-fw"></i> CodePen</a>
-                </li>
-                <li>
-                  <a href="https://www.freecodecamp.org/forum/u/codywilliamson/summary" target="_blank">
-                    <i class="fab fa-free-code-camp fa-fw"></i> FCC</a>
-                </li>
-                <li>
-                  <a href="#Contact">
-                    <i class="fas fa-at fa-fw"></i> Email</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        </div>
-    </section> <!-- end NAVBAR -->
+---
+layout: default
+title: Portfolio
+---
     <!-- HOME page -->
     <main class="container">
       <div class="home" id="Home">
@@ -68,7 +13,7 @@
 
     <!-- ABOUT page -->
       <section class="about" id="About">
-        <h2 class="subtitle">About Me</h1>
+        <h2 class="subtitle">About Me</h2>
           <div class="wrapper">
             <div class="left">
               <img class="logo-img" src="assets/logo.jpg" alt="Cody Williamson's Logo">
@@ -128,30 +73,19 @@
         </div>
       </section> <!-- end services -->
 
-      <!-- CONTACT page -->
-      <section class="contact" id="Contact">
-        <h2 class="subtitle">Contact Me</h2>
-          <form class="form" action="https://formspree.io/codywscw@gmail.com" method="POST">
-            <input class="feedback" type="text" name="name" placeholder="Name">
-            <input class="feedback" type="email" name="email" placeholder="Email">
-            <textarea class="feedback" name="text" placeholder="What do you need?"></textarea>
-            <input type="submit" name="submit" value="SUBMIT">
-          </form>
-      </section> <!-- end CONTACT -->
-
-      <!-- FOOTER NAV -->
-      <footer class="footer">
-        <div class="flex-container">
-          <ul class="navbar-footer">
-            <li class="nav-link"><a href="#Home">Home</a></li>
-            <li class="nav-link"><a href="#About">About</a></li>
-            <li class="nav-link"><a href="#Contact">Contact</a></li>
+      <!-- BLOG section -->
+      <section class="blog">
+        <div class="subtitle">
+          <h2>Blog</h2>
+        </div>
+        <div class="blog-list">
+          <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%d %B %Y" }}
+              <p>{{ post.excerpt }}</p>
+            </li>
+            {% endfor %}
           </ul>
         </div>
-      </footer> <!-- end footer nav -->
-    </div>
-
-    </main>
-  </body>
-
-</html>
+      </section> <!-- end BLOG -->
