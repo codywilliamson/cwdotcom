@@ -17,6 +17,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  line-height: 1.2em;
 }
 
 html {
@@ -204,52 +205,6 @@ nav ul li ul li a {
   font-weight: bold;
 }
 
-/*
-  removing title animation for now, was more of a practice use of animations
-  but i don't think it was a solid design choice for my website.
-  I'm keeping the code for now because I might revisit this in the future.
-  I had issues with the text being cut off on smaller screens, and the
-  caret extending way passed the text. it was experiential learning
-  about animations, but on to js.
-
-.typewriter {
-  overflow: hidden;
-  border-right: .15em solid #262626;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  -webkit-animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-  @-webkit-keyframes typing {
-    from {width: 0}
-    to {width: 100%}
-  }
-
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-  @-webkit-keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: #262626}
-  }
-
-  @keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: #262626}
-  } */
-
-/*
-.underline {
-  width: 35%;
-  color: #262626;
-  margin-top: -30px;
-} */
-
 .tagline {
   font-size: 30px;
 }
@@ -359,6 +314,42 @@ nav ul li ul li a {
   padding-top: 35px;
 }
 
+.technologies {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.responsive-icons {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.call-to-action {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.call-to-action a {
+  text-decoration: none;
+  color: #262626;
+}
+
+.call-to-action a:hover {
+  transform: scale(1.1);
+}
+
+.icons {
+  height: 60px;
+}
+
 @media only screen and (max-width: 800px) {
   .card {
     flex-direction: column;
@@ -410,21 +401,26 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  background: #262626;
+  /* background: #262626;  */
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: #f5f5f5;
+  color: #262626;
   margin-left: 10px;
   font-size: 24px;
   padding: 10px;
   margin-top: -4px;
   font-weight: 700;
+  background-image: linear-gradient(#262626, #262626);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 1s, color 1s;
 }
 
 [type="submit"]:hover {
-  background: #dcdcdc;
-  color: #262626;
+  background: #262626;
+  color: #f5f5f5;
 }
 
 /* footer styling */
