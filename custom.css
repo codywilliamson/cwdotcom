@@ -30,6 +30,11 @@ body {
   margin: 0;
 }
 
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Navbar styling */
 
 .logo {
