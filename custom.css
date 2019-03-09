@@ -17,7 +17,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  line-height: 1.2em;
+  line-height: 1.35em;
 }
 
 html {
@@ -254,7 +254,7 @@ nav ul li ul li a {
 
 .logo-img {
   height: 280px;
-  width: 280px;
+
   border-radius: 360%;
 }
 
@@ -311,6 +311,7 @@ nav ul li ul li a {
 
 .card-title {
   padding-bottom: 35px;
+  color: #3f3f3f;
   padding-top: 35px;
 }
 
@@ -401,7 +402,6 @@ textarea {
 
 [type="submit"] {
   width: 100%;
-  /* background: #262626;  */
   border-radius: 5px;
   border: 0;
   cursor: pointer;
