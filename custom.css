@@ -210,7 +210,7 @@ nav ul li ul li a {
 /* Home Page styling */
 
 .home {
-  background: url('/assets/homeBg.jpg') #3f3f3f;
+  background: url('assets/homeBg.jpg') #3f3f3f;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
