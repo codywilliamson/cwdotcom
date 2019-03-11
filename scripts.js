@@ -21,3 +21,7 @@
     }); // end toggle hamburger
   });
  })(jQuery);
+
+ const scroll = new SmoothScroll('.navigation a[href*="#"]', {
+  speed: 300
+});
