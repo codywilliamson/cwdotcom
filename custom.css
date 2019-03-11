@@ -1,12 +1,17 @@
 /*
-COLORS:
-  Slate: #262626
-  Secondhand Grey: #3f3f3f
-  Whitish: #f5f5f5
-  Light Grey: #dcdcdc
+  Author: Cody Williamson
+  Built with Flexbox
+
+    COLORS:
+      Slate: #262626
+      Secondhand Grey: #3f3f3f
+      Whitish: #f5f5f5
+      Light Grey: #dcdcdc
+
 */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 html, body {
@@ -24,7 +29,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
@@ -194,22 +199,21 @@ nav ul li ul li a {
 /* Home Page styling */
 
 .home {
-  background: url('assets/homeBg.jpg') #3f3f3f;
+  background: url('assets/homeBg.jpg') #dcdcdc;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 200px;
+  padding: 5em;
   text-align: center;
   margin: 0 auto;
 }
 
 .title {
-  font-size: 75px;
-  font-weight: bold;
+  font-size: 5em;
 }
 
 .tagline {
-  font-size: 30px;
+  font-size: 2em;
 }
 .tagline a {
   text-decoration: none;
@@ -472,7 +476,13 @@ textarea {
 
 @media only screen and (max-width: 768px) {
     .title {
-      font-size: 40px;
+      font-size: 3em;
+      padding-top: 1em;
+    }
+
+    .home {
+      padding: 2em;
+      height: 75vh;
     }
 
     .wrapper {
@@ -503,19 +513,19 @@ textarea {
   }
 
   .home {
-    padding: 100px;
+    padding: 1em;
   }
 
   .title {
-    font-size: 30px;
+
   }
 
   .subtitle {
-    font-size: 30px;
+    font-size: 1.42em;
   }
 
   .tagline {
-    font-size: 15px;
+    font-size: 1.7em;
   }
 
   .portrait {
