@@ -169,7 +169,7 @@ nav ul li ul li a {
     position: absolute;
     display: block;
     content: "";
-    transition: all 90ms ease-in-out;
+    transition: all .4s ease-in-out;
   }
   #nav-toggle span:before {
     top: -10px;
@@ -209,7 +209,12 @@ nav ul li ul li a {
 }
 
 .title {
+  font-weight: lighter;
   font-size: 5em;
+}
+
+.tagline {
+  font-weight: normal;
 }
 
 .tagline {
@@ -220,8 +225,24 @@ nav ul li ul li a {
   color: #262626;
 }
 
-.tagline a:hover {
-  border-bottom: 1px solid #000;
+.link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #333;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+    transition: width .3s;
 }
 
 .learn-more {
@@ -232,6 +253,7 @@ nav ul li ul li a {
 }
 
 .learn-more:hover {
+  transition: all 0.5s ease-in-out;
   transform: scale(1.1);
 }
 
@@ -280,10 +302,10 @@ nav ul li ul li a {
   -webkit-box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
   -moz-box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
   box-shadow: -16px 24px 60px -10px rgba(0,0,0,0.42);
-  transition: all .13s ease;
   line-height: 1.4em;
 }
 .aboutme:hover {
+  transition: all .3s ease-in-out;
   -webkit-box-shadow: -26px 34px 60px -10px rgba(0,0,0,0.42);
   -moz-box-shadow: -26px 34px 60px -10px rgba(0,0,0,0.42);
   box-shadow: -26px 34px 60px -10px rgba(0,0,0,0.42);
@@ -317,9 +339,12 @@ nav ul li ul li a {
   line-height: 1.4em;
 }
 
-.card:hover {
+/* .card:hover {
+  transition: all .3s ease-in-out;
+  background-color: #dcdcdc;
+  border-radius: 20px;
   box-shadow: 5px 15px 39px 7px rgba(0,0,0,0.49);
-}
+} */
 
 .card-title {
   padding-bottom: 35px;
