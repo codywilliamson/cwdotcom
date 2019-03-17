@@ -201,7 +201,8 @@ nav ul li ul li a {
 
 .home {
   background: url('assets/homeBg.jpg') #dcdcdc;
-  height: 100%;
+  height: 100vh;
+  background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 5em;
