@@ -14,7 +14,7 @@
     <script src="scripts.js" defer></script>
     <title>Cody Williamson's Portfolio</title>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
     <div class="page-wrapper">
     <!-- NAVBAR -->
       <section class="navigation">
@@ -30,6 +30,7 @@
             <li class="home-link"><a href="#Home">Home</a></li>
             <li><a href="https://codywilliamson.github.io/contrast-blog/" target="_blank">Blog</a></li>
             <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
             <li><a href="#Services">Services</a></li>
             <li><a href="#!">Contact</a>
               <ul class="nav-dropdown">
@@ -91,6 +92,25 @@
             </div>
         </div>
       </section> <!-- end ABOUT -->
+
+<!-- PROJECTS section -->
+    <section id="Projects">
+      <h2 class="subtitle">Projects</h2>
+      <div class="wrapper">
+        <div class="projects">
+        <div class="project-card">
+          <div class="project-image">
+            <a href="https://isbelllawncare.com" target="_blank">
+              <img src="assets/isbell-lawn-care.png" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
+            </a>
+          </div>
+          <div class="project-info">
+            <p>I built this client website using the big 3 (HTML/CSS/minimal-JS). It was deployed in March 2019 on Netlify.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
 
       <!-- SERVICES page -->
       <section class="services" id="Services">
