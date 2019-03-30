@@ -352,6 +352,7 @@ nav ul li ul li a {
   background-color: #f5f5f5;
   padding: 10px;
   transition: all 0.3s ease-in-out;
+  margin: 30px;
 }
 
 .project-image img {
