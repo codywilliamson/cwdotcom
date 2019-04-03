@@ -23,5 +23,5 @@
  })(jQuery);
 
  const scroll = new SmoothScroll('.navigation a[href*="#"]', {
-  speed: 300
+  speed: 50
 });
