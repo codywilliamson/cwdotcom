@@ -19,6 +19,7 @@
 
 
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -44,6 +45,7 @@ body {
   flex-direction: column;
   width: 100vw;
 }
+
 
 
 /* Navbar styling */
@@ -213,23 +215,9 @@ nav ul li ul li a {
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #f5f5f5;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0.6);
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-
-}
-
-.hero-title {
-  padding: 50px 75px;
+  padding: 5em;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .title {
@@ -239,18 +227,19 @@ nav ul li ul li a {
 
 .tagline {
   font-weight: normal;
-  font-size: 2em;
-  max-width: 700px;
 }
 
+.tagline {
+  font-size: 2em;
+}
 .tagline a {
   text-decoration: none;
-  color: #666;
+  color: #262626;
 }
 
 .link {
     display: inline-block;
-    color: #f5f5f5;
+    color: #000;
     text-decoration: none;
 }
 
@@ -259,7 +248,7 @@ nav ul li ul li a {
     display: block;
     width: 0;
     height: 4px;
-    background: #f5f5f5;
+    background: #333;
     transition: width .3s;
 }
 
@@ -268,43 +257,22 @@ nav ul li ul li a {
     transition: width .3s;
 }
 
-
-.learn-more-icon {
-  width: 100vw;
-  text-align: center;
-}
-
-
 .learn-more {
   font-size: 50px;
   text-decoration: none;
   color: inherit;
   padding-top: 80px;
-  text-align: center;
-  margin: 0 auto;
-  transition: all 0.2s ease-in-out;
 }
 
 .learn-more:hover {
+  transition: all 0.5s ease-in-out;
   transform: scale(1.1);
 }
-@media (max-width: 768px) {
-  .title {
-    font-size: 3.3em;
-  }
-  .tagline {
-    font-size: 1.7em;
-  }
-  .hero-title {
-    padding: 30px 40px;
-  }
-  .overlay {
-    margin: 0;
-  }
-  .home {
-    padding: 0;
-  }
+
+.hero {
+  margin: 0 auto;
 }
+
 /* About section styling */
 
 .about {
@@ -412,7 +380,7 @@ nav ul li ul li a {
   margin: 20px;
   height: 400px;
   padding: 10px 30px;
-  max-width: 500px;
+  width: 500px;
   /* -webkit-box-shadow: 0px 10px 34px 2px rgba(0,0,0,0.49);
   -moz-box-shadow: 0px 10px 34px 2px rgba(0,0,0,0.49);
   box-shadow: 0px 10px 34px 2px rgba(0,0,0,0.49); */
@@ -431,7 +399,6 @@ nav ul li ul li a {
   padding-bottom: 35px;
   color: #3f3f3f;
   padding-top: 35px;
-  font-size: 1.6em;
 }
 
 .technologies {
@@ -463,6 +430,10 @@ nav ul li ul li a {
   transition: all .3s ease-in-out;
 }
 
+.call-to-action a:hover {
+  transform: scale(1.1);
+}
+
 .icons {
   height: 60px;
 }
@@ -470,6 +441,12 @@ nav ul li ul li a {
 @media only screen and (min-width: 1000px) {
   .card {
     flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .card {
+    width: 250px;
   }
 }
 
@@ -536,30 +513,22 @@ textarea {
 /* footer styling */
 
 .footer {
-  width: 100%;
-  background: var(--primaryColor);
+  width: 100;
 }
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
+
 .navbar-footer {
   background-color: var(--primaryColor);
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
   padding-top: 15px;
+  padding-bottom: 15px;
   top: 0;
   bottom: 0;
   list-style: none;
-}
-
-.nav-link {
-  padding: 5px;
-  margin: 0;
 }
 
 .nav-link a {
@@ -567,6 +536,13 @@ textarea {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
+=======
+.copyright {
+  color: #f5f5f5;
+}
+
+>>>>>>> parent of ce93416... style changes, spacings
 /* Responsiveness */
 
 @media only screen and (min-width: 2560px) {
@@ -578,15 +554,15 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  /*   .title {
-    font-size: 3em;
-    padding-top: 1em;
-  }
+    .title {
+      font-size: 3em;
+      padding-top: 1em;
+    }
 
-  .home {
-    padding: 2em;
-    height: 75vh;
-  } */
+    .home {
+      padding: 2em;
+      height: 75vh;
+    }
 
     .learn-more {
       display: none;
@@ -607,7 +583,11 @@ textarea {
     }
 }
 
+<<<<<<< HEAD
  @media only screen and (min-width: 768px) {
+=======
+@media only screen and (min-width: 768px) {
+>>>>>>> parent of ce93416... style changes, spacings
   .home, .about, .contact {
     margin-right: -40px;
   }
@@ -619,6 +599,17 @@ textarea {
     font-size: 0.8em;
   }
 
+<<<<<<< HEAD
+=======
+  .home {
+    padding: 1em;
+  }
+
+  .title {
+
+  }
+
+>>>>>>> parent of ce93416... style changes, spacings
   .subtitle {
     font-size: 1.42em;
   }
