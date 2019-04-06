@@ -98,6 +98,13 @@ img {
   z-index: 200;
 }
 
+@media (max-width: 768px) {
+  .nav__trigger {
+    top: 50px;
+    right: 30px;
+  }
+}
+
 .nav--active .nav__trigger {
   opacity: 0.5;
 }
@@ -195,6 +202,18 @@ img {
   font-size: 2em;
   max-width: 900px;
   padding-bottom: 50px;
+  transition: all var(--duration) var(--ease);
+}
+
+@media (max-width: 768px) {
+  .hero-tagline {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+  }
+
+  .hero-title {
+    padding-bottom: 20px;
+  }
 }
 
 .hero-tagline a {
@@ -220,6 +239,13 @@ img {
   margin-right: 15px;
   color: var(--white);
   transition: all 0.3s var(--ease);
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px;
+    margin: 5px;
+  }
 }
 
 .button:hover {
