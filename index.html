@@ -9,195 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
     <script src="scripts.js" defer></script>
-    <title>I am Cody Williamson</title>
+    <title>C.W. | Web Dev </title>
   </head>
-  <body onload="document.body.style.opacity='1'">
-    <div class="page-wrapper">
-    <!-- NAVBAR -->
-      <section class="navigation">
-        <div class="nav-container">
-          <div class="brand">
-            <a href="#!"><span class="logo">C. Williamson</span></a>
-          </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
-          </div>
-          <ul class="nav-list">
-<!--             <li class="home-link"><a href="#Home">Home</a></li>
-             -->            <!-- <li><a href="https://codywilliamson.github.io/contrast-blog/" target="_blank">Blog</a></li> -->
-            <li><a href="#About">About</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#!">Contact</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="https://github.com/codywilliamson" target="_blank">
-                    <i class="fab fa-github fa-fw"></i> GitHub</a>
-                </li>
-                <li>
-                  <a href="https://codepen.io/codecody/" target="_blank">
-                    <i class="fab fa-codepen fa-fw"></i> CodePen</a>
-                </li>
-                <!-- <li>
-                  <a href="https://facebook.com/cody.www" target="_blank">
-                    <i class="fab fa-facebook-f fa-fw"></i> Facebook</a>
-                </li>
-                <li>
-                  <a href="https://www.freecodecamp.org/forum/u/codywilliamson/summary" target="_blank">
-                    <i class="fab fa-instagram fa-fw"></i> Instagram</a>
-                </li> -->
-                <li>
-                  <a href="#Contact">
-                    <i class="fas fa-at fa-fw"></i> Email</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        </div>
-    </section> <!-- end NAVBAR -->
+  <body>
+    <header class="navigation">
+      <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">About</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Projects</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Blog</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Contact Me</a></li>
+    </ul>
+  </nav>
+    </header>
 
-    <!-- HOME page -->
-    <main class="container">
-      <section id="Home">
-        <div class="home">
-          <div class="overlay">
-            <div class="hero-title">
-              <h1 class="title">Cody Williamson</h1>
-              <!-- <hr class="underline"> -->
-              <h4 class="tagline">I'm a front end developer. You're a potential client. Let's build <a href="#Contact" class="link">something</a> together.</h4>
-              <div class="learn-more-icon">
-                <a href="#About" class="learn-more"><i class="fa fa-angle-down learn-more" aria-hidden="true"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </section> <!-- end HOME -->
-
-    <!-- ABOUT page -->
-      <section class="about" id="About">
-        <h2 class="subtitle">About Me</h1>
-          <div class="wrapper">
-            <div class="left">
-              <img class="logo-img" src="assets/logo.jpg" alt="Cody Williamson's Logo">
-            </div>
-            <div class="aboutme">
-              <p>
-                Hey there. I'm a front end web developer located in the North Alabama area. I have
-                self-taught myself web technologies such as HTML, CSS, and JavaScript. Using my
-                creative abilities, I can also design a beautiful product to help bring your product or
-                business to life.
-              </p>
-              <p>
-                Have something in mind? Contact me on <a href="https://github.com/codywilliamson" target="_blank">GitHub</a>.
-              </p>
-            </div>
-        </div>
-      </section> <!-- end ABOUT -->
-
-<!-- PROJECTS section -->
-    <section id="Projects">
-      <h2 class="subtitle">Projects</h2>
-      <div class="wrapper">
-        <div class="projects">
-        <div class="project-card">
-          <div class="project-image">
-            <a href="https://isbelllawncare.com" target="_blank">
-              <img src="assets/isbell-lawn-care.png" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
-            </a>
-          </div>
-          <div class="project-info">
-            <p>I built this client website using the big 3 (HTML/CSS/minimal-JS). It was deployed in March 2019 on Netlify.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div class="wrapper">
-        <div class="projects">
-        <div class="project-card">
-          <div class="project-image">
-            <a href="https://mobile-first-cw.netlify.com/" target="_blank">
-              <img src="assets/williamson-web.png" alt="Screenshot of a fake company website built by Cody Williamson to showcase his skills">
-            </a>
-          </div>
-          <div class="project-info">
-            <p>I built this website to practice some design skills, semantic HTML, and learn form handling. It was deployed in March 2019 on Netlify.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-      <!-- SERVICES page -->
-      <section class="services" id="Services">
-        <h2 class="subtitle">Services</h2>
-        <div class="wrapper">
-          <div class="card">
-            <h3 class="card-title"><i class="fas fa-crop fa-fw"></i> Design</h3>
-            <p class="card-info">
-              Using modern web design methodologies, I'll design an end product catered to your vision.
-              Or I can take whatever design you provide and bring it to life.
-            </p>
-            <ul class="responsive-icons">
-              <li><a href="https://www.flaticon.com/authors/freepik" target="_blank"><img src="assets/001-responsive-design-symbol.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"></a></li>
-              <li><a href="https://www.flaticon.com/authors/freepik"><img src="assets/002-responsive.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"></a></li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="card-title"><i class="fab fa-connectdevelop fa-fw"></i> Develop</h3>
-            <p class="card-info">
-              HTML, CSS, & JavaScript will be the foundation. Want to add content yourself?
-              I can build your site ontop of WordPress, too.
-            </p>
-            <ul class="technologies">
-              <li><img src="assets/html5logo.svg" alt="HTML5 logo" class="icons"></li>
-              <li><img src="assets/css3.svg" alt="CSS3 logo" class="icons"></li>
-              <li><img src="assets/javascript-1.svg" alt="JavaScript logo" class="icons"></li>
-              <li><img src="assets/wordpress-blue.svg" alt="WordPress logo" class="icons"></li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="card-title"><i class="fas fa-plus fa-fw"></i> Create</h3>
-            <p class="card-info">
-              Working together, we'll create a product you'll love. Your satisfaction is
-              my number one priority.
-            </p>
-            <p class="call-to-action">
-              <img src="assets/respect.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"><a href="#Contact">Let's get to work.</a>
-            </p>
-          </div>
-        </div>
-      </section> <!-- end services -->
-
-      <!-- CONTACT page -->
-      <section class="contact" id="Contact">
-        <h2 class="subtitle">Contact Me</h2>
-          <form class="form" action="https://formspree.io/codywscw@gmail.com" method="POST">
-            <input class="feedback" type="text" name="name" placeholder="Name">
-            <input class="feedback" type="email" name="email" placeholder="Email">
-            <textarea class="feedback" name="text" placeholder="What do you need?"></textarea>
-            <input type="submit" name="submit" value="SUBMIT">
-          </form>
-      </section> <!-- end CONTACT -->
-
-      <!-- FOOTER NAV -->
-      <footer class="footer">
-        <div class="flex-container">
-          <ul class="navbar-footer">
-            <li class="nav-link"><a href="#Home">Home</a></li>
-            <li class="nav-link"><a href="#About">About</a></li>
-            <li class="nav-link"><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-      </footer> <!-- end footer nav -->
+  <!-- hero section -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="hero-info">
+        <h1 class="hero-title">Hey, I'm Cody.</h1>
+        <p class="hero-tagline">I'm a front end developer. Creating beautiful user experiences is my passion, so let's work <a href="#contact">together</a> to build something perfect for you.</p>
+        <a href="#projects" class="button">View My Work</a>
     </div>
+    </div>
+  </section>
 
-    </main>
   </body>
 
 </html>
