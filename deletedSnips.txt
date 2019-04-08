@@ -1,0 +1,125 @@
+redesign snippets for later
+this file contains deleted snips for possible use later, will delete
+
+logo link:
+    <img src="assets/logo.jpg" alt="Cody Williamson brand logo - the letters C and W in black overlaying a mountain" class="logo">
+
+ABOUT SECTION HTML:
+    <div class="left-side"> <!-- begin left side of about section -->
+      <h2 class="about-title">What I do...</h2>
+
+      <div class="skill-card">
+        <h3><i class="far fa-address-card fa-fw"></i> Static Sites</h3>
+        <p>Need a landing page for your business? Or maybe you need a personal site to showcase your portfolio -- regardless, I'll build you a modern website catered to your vision.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-pen-nib fa-fw"></i>  Dynamic Sites</h3>
+        <p>Want a blog to talk about your niche? Or a website to showcase and sell products? Built on WordPress, I can give you control over your webpage.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-wrench fa-fw"></i> Maintenance</h3>
+        <p>Don't want to worry about hosting? Want to change some things, or completely redesign? For a monthly fee, I can maintain your website along with a free consultancy on any updates you may want.</p>
+      </div>
+
+    </div> <!-- end left side -->
+
+    <div class="right-side"> <!-- begin right side of about section -->
+      <h2 class="about-title">How I do it...</h2>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-sliders-h fa-fw"></i> Custom Coding</h3>
+        <p>Drag &amp; drop website builders lead to bloated, slow-loading pages. I strive to build lightweight, fast sites. Did you know that 53% users will leave your site if it takes longer than 3 seconds to <a href="https://www.marketingdive.com/news/google-53-of-mobile-users-abandon-sites-that-take-over-3-seconds-to-load/426070/" target="_blank">load?</a></p>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-pen-nib fa-fw"></i>  Dynamic Sites</h3>
+        <p>Want a blog to talk about your niche? Or a website to showcase and sell products? Built on WordPress, I can give you control over your webpage.</p>
+      </div>
+
+      <div class="skill-card">
+        <h3><i class="fas fa-wrench fa-fw"></i> Maintenance</h3>
+        <p>Don't want to worry about hosting? Want to change some things, or completely redesign? For a monthly fee, I can maintain your website along with a free consultancy on any updates you may want.</p>
+      </div>
+
+    </div> <!-- end right side -->
+
+ABOUT SECTION CSS:
+
+    .about-container {
+      width: 100vw;
+      height: auto;
+      background: var(--white);
+      margin-top: -90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      position: relative;
+      z-index: -1;
+    }
+
+    @media (max-width: 768px) {
+      .middle-img {
+        display: none;
+      }
+    }
+
+    .left-side, .right-side {
+      width: 50vw;
+      height: auto;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .left-side {
+      background: #96ccf2;
+      text-align: left;
+      border-right: 1.5px solid #666;
+    }
+
+    .about-title {
+      margin-top: 100px;
+      margin-bottom: 20px;
+      font-size: 2.4em;
+    }
+
+    .skill-card {
+      margin: 20px 20px;
+      line-height: 1.4em;
+      padding: 10px;
+      max-width: 400px;
+    }
+
+    .skill-card h3 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+
+    .skill-card a {
+      text-decoration: none;
+      color: var(--primaryColor);
+    }
+
+    .right-side {
+      background: #e4f2fb;
+      border-left: 1.5px solid #666;
+      color: #70b8ec;
+    }
+
+    .logo {
+      height: 200px;
+      width: 200px;
+      border: 3px solid #666;
+      border-radius: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left:0;
+      right:0;
+      margin: 0 auto;
+    }
