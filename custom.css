@@ -12,19 +12,15 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-}
-*, *:before, *:after {
+} *, *:before, *:after {
   box-sizing: inherit;
-}
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+} body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-}
-ol, ul {
+} ol, ul {
   list-style: none;
-}
-img {
+} img {
   max-width: 100%;
   height: auto;
 }
@@ -334,10 +330,11 @@ img {
   font-weight: 500;
 }
 
-.about-container h2 {
+.section-title {
   font-size: 2.3em;
   color: #388cd8;
   letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .skill-card-container {
@@ -384,4 +381,54 @@ img {
 .disclaimer span {
   border-bottom: 1px solid #666;
   font-style: italic;
+}
+
+/* Projects Section */
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--darkWhite);
+}
+
+.projects-container {
+  width: 75vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 100px auto;
+}
+
+.project {
+  height: 500px;
+  width: 50%;
+  font-family: var(--roboto);
+  margin: 5px;
+  position: relative;
+  border: 1px solid #666;
+}
+
+.project-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 0;
+}
+
+.technologies {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  flex-flow: row nowrap;
+}
+
+.technologies li {
+  padding: 5px;
+  font-size: 1.3em;
 }
