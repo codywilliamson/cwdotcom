@@ -46,6 +46,10 @@ html {
   --roboto: 'Roboto', 'Montserrat', sans-serif;
 }
 
+body {
+  background: var(--darkWhite);
+}
+
 /* Navigation */
 
 .nav {
@@ -316,74 +320,6 @@ html {
   }
 }
 
-/* About Section Styling */
-
-.about-container {
-  background: var(--darkWhite);
-  height: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
-  color: #545454;
-  padding: 50px 10px;
-  font-weight: 500;
-}
-
-.section-title {
-  font-size: 2.3em;
-  font-weight: 500;
-  color: #388cd8;
-  letter-spacing: 3px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.skill-card-container {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  margin-top: 100px;
-  transition: all var(--duration) var(--ease);
-}
-
-.skill-card {
-  width: 200px;
-  height: 300px;
-  margin: 30px;
-  transition: all var(--duration) var(--ease);
-}
-
-.skill-title i {
-  color: #388cd8;
-}
-
-.skill-title {
-  font-size: 1.4em;
-  height: 20%;
-}
-.skill-info {
-  height: 75%;
-  line-height: 1.5em;
-}
-.skill-hr {
-  width: 50%;
-  text-align: center;
-  height: 8px;
-  border-radius: 20px;
-  background-color: #388cd8;
-}
-
-.disclaimer {
-  font-size: 0.7em;
-  max-width: 900px;
-}
-.disclaimer span {
-  border-bottom: 1px solid #666;
-  font-style: italic;
-}
-
 /* Projects Section */
 
 #projects {
@@ -463,4 +399,115 @@ html {
 .technologies li {
   padding: 5px;
   font-size: 1.3em;
+}
+
+/* About Section Styling */
+
+.about-container {
+  background: var(--darkWhite);
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  color: #545454;
+  padding: 50px 10px;
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 2.3em;
+  font-weight: 500;
+  color: #388cd8;
+  letter-spacing: 3px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.skill-card-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-top: 100px;
+  transition: all var(--duration) var(--ease);
+}
+
+.skill-card {
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+  transition: all var(--duration) var(--ease);
+}
+
+.skill-title i {
+  color: #388cd8;
+}
+
+.skill-title {
+  font-size: 1.2em;
+  height: 25%;
+}
+.skill-info {
+  height: 70%;
+  line-height: 1.5em;
+}
+.skill-hr {
+  width: 50%;
+  text-align: center;
+  height: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #388cd8;
+}
+
+.disclaimer {
+  font-size: 0.7em;
+  max-width: 900px;
+}
+.disclaimer span {
+  border-bottom: 1px solid #666;
+  font-style: italic;
+}
+
+/* tech used box */
+
+.tech-used {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--darkWhite);
+  -webkit-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
+  -moz-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
+  box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
+  width: 35vw;
+  min-width: 236px;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all var(--duration) var(--ease);
+}
+
+.tech-title {
+  margin-bottom: 20px;
+  border-bottom: 4px solid #388cd8;
+  padding: 5px;
+}
+
+.tech-icons {
+  height: 40px;
+  width: 40px;
+  margin: 3px 5px;
+}
+
+.tech {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  transition: all var(--duration) var(--ease);
 }
