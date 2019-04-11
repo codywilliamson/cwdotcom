@@ -54,17 +54,17 @@ body {
 
 .nav {
   position: fixed;
-  z-index: 100;
-  opacity: 0;
-  transition-property: all;
-  transition-duration: var(--duration);
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  transition: all var(--duration) var(--ease);
   font-family: var(--roboto);
   font-weight: 400;
 }
 
 .nav__list span {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 3px;
   color: var(--white);
   text-transform: uppercase;
@@ -75,19 +75,20 @@ body {
 }
 
 .nav__list {
-  margin: 0;
-  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  text-transform: uppercase;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 50px;
 }
 
 .nav__item {
   list-style-type: none;
-  text-align: left;
-  padding: 30px 10px;
 }
 
 .nav__link {
   font-size: 1.5em;
-  text-transform: uppercase;
   text-decoration: none;
   color: var(--white);
   opacity: 1;
@@ -101,7 +102,7 @@ body {
 /* navigation icon */
 
 .nav__trigger {
-  display: block;
+  display: none;
   position: fixed;
   width: 30px;
   height: 25px;
@@ -112,8 +113,29 @@ body {
 
 @media (max-width: 768px) {
   .nav__trigger {
+    display: block;
     top: 50px;
     right: 30px;
+  }
+  .nav {
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+  }
+  .nav__item {
+    text-align: left;
+    padding: 30px 10px;
+  }
+  .nav__list {
+    margin: 0;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav__link {
+    opacity: 0;
   }
 }
 
@@ -150,14 +172,7 @@ body {
   margin-top: 10px;
 }
 
-.nav {
-  transform: translateX(-100%);
-  width: 100%;
-  height: 100%;
-}
-
 .nav__link {
-  opacity: 0;
   transition-delay: 500ms;
 }
 
@@ -182,6 +197,15 @@ body {
 .nav--active .nav__icon:after {
   margin-top: 0;
   transform: rotate(-45deg);
+}
+
+.nav.scrolled {
+  background: linear-gradient(to right top, var(--primaryColor) 45%, var(--lightBlue) 75%);
+  transition: background 0.5s var(--ease);
+}
+.nav__list.scrolled {
+  text-transform: capitalize;
+  padding: 10px;
 }
 
 /* Hero Section */
@@ -475,6 +499,7 @@ body {
 /* tech used box */
 
 .tech-used {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
