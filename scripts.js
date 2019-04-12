@@ -27,16 +27,20 @@ $(document).ready(function(){
   });
 });
 
+// full screen mobile menu
 $('.nav__trigger',).on('click', function(e){
-     e.preventDefault();
-     $(this).parent().toggleClass('nav--active').show();
+     e.preventDefault(); // prevent default behavior
+     $(this).parent().toggleClass('nav--active').show(); //add nav--active class to nav icon
+     $('body').toggleClass('no-scroll'); //disable scroll behind nav
    });
-
-$('.nav li').on('click', function(){
+// clicking on a link or anywhere in the nav closes the menu and enables scroll on body
+$('.nav li, .nav').on('click', function(){
   $(".nav__trigger").parent().removeClass("nav--active");
   $(".nav__icon").removeClass("nav--active");
+  $('body').removeClass('no-scroll');
 });
 
+// on desktop, adds scrolled class to nav
 var myNav = document.querySelector("nav");
 var nav = document.querySelector(".nav__list");
 
