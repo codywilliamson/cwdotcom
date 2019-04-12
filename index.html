@@ -3,195 +3,209 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- FOR TESTING ONLY
-    <meta http-equiv="refresh" content="10" >
-     COMMENT OUT ON RELEASE -->
+    <meta name="description" content="Portfolio site for Freelance Web Developer Cody Williamson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="C.W. / Front End Developer" />
+    <meta property="og:url" content="https://codywilliamson.com" />
+    <meta property="og:image" content="assets/logo.jpg" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="custom.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous" defer></script>
     <script src="scripts.js" defer></script>
-    <title>Cody Williamson's Portfolio</title>
+    <title>C.W. | Web Developer </title>
   </head>
-  <body onload="document.body.style.opacity='1'">
-    <div class="page-wrapper">
-    <!-- NAVBAR -->
-      <section class="navigation">
-        <div class="nav-container">
-          <div class="brand">
-            <a href="#!"><span class="logo">C. Williamson</span></a>
-          </div>
-        <nav>
-          <div class="nav-mobile">
-            <a id="nav-toggle" href="#!"><span></span></a>
-          </div>
-          <ul class="nav-list">
-            <li class="home-link"><a href="#Home">Home</a></li>
-            <li><a href="https://codywilliamson.github.io/contrast-blog/" target="_blank">Blog</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#!">Contact</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="https://github.com/codywilliamson" target="_blank">
-                    <i class="fab fa-github fa-fw"></i> GitHub</a>
-                </li>
-                <li>
-                  <a href="https://codepen.io/codecody/" target="_blank">
-                    <i class="fab fa-codepen fa-fw"></i> CodePen</a>
-                </li>
-                <li>
-                  <a href="https://facebook.com/cody.www" target="_blank">
-                    <i class="fab fa-facebook-f fa-fw"></i> Facebook</a>
-                </li>
-                <li>
-                  <a href="https://www.freecodecamp.org/forum/u/codywilliamson/summary" target="_blank">
-                    <i class="fab fa-instagram fa-fw"></i> Instagram</a>
-                </li>
-                <li>
-                  <a href="#Contact">
-                    <i class="fas fa-at fa-fw"></i> Email</a>
-                </li>
+  <body>
+    <noscript>This site uses JavaScript for some simple animations, so even though your browser does not support JavaScript, it should be fine.</noscript>
+    <header class="navigation">
+      <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><span>C. Williamson</span></li>
+      <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+      <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+      <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+      <li class="nav__item"><a class="nav__link" href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+    </header>
+
+  <!-- hero section -->
+  <section id="home">
+    <div class="hero-bg">
+      <div class="hero-info">
+        <h1 class="hero-title">Hey, I'm Cody.</h1>
+        <p class="hero-tagline">I'm a front end developer. Creating beautiful user experiences is my passion, so let's work <a href="#contact">together</a> to build something perfect for you.</p>
+        <div class="buttons">
+          <a href="#projects" class="button">View My Work</a>
+          <a href="assets/cwilliamson.pdf" class="button" download>Resume</a>
+          <a href="https://github.com/codywilliamson" class="icon" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+          <a href="https://codepen.io/codecody/" class="icon" target="_blank"><i class="fab fa-codepen fa-fw"></i></a>
+      </div>
+    </div>
+    </div>
+  </section> <!-- end hero -->
+
+  <!-- projects section -->
+  <section id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+        <div class="wrapper">
+          <div class="projects">
+          <div class="project-card">
+            <div class="project-image">
+              <a href="https://isbelllawncare.com" target="_blank">
+                <img src="assets/isbell-lawn-care.jpg" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
+            </div>
+            <div class="project-info">
+              <h4>Isbell Lawn Care</h4>
+              <ul class="technologies">
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-js-square"></i></li>
               </ul>
-            </li>
-          </ul>
-        </nav>
-        </div>
-    </section> <!-- end NAVBAR -->
-
-    <!-- HOME page -->
-    <main class="container">
-      <section id="Home">
-        <div class="home">
-            <h1 class="title">Cody Williamson</h1>
-            <!-- <hr class="underline"> -->
-            <h4 class="tagline">I'm a front end developer. You're a potential client. Let's build <a href="#Contact" class="link">something</a> together.</h4>
-            <a href="#About" class="learn-more"><i class="fa fa-angle-down learn-more" aria-hidden="true"></i></a>
-        </div>
-    </section> <!-- end HOME -->
-
-    <!-- ABOUT page -->
-      <section class="about" id="About">
-        <h2 class="subtitle">About Me</h1>
-          <div class="wrapper">
-            <div class="left">
-              <img class="logo-img" src="assets/logo.jpg" alt="Cody Williamson's Logo">
-            </div>
-            <div class="aboutme">
-              <p>
-                Hey there. I'm a front end web developer located in the North Alabama area. I have
-                self-taught myself web technologies such as HTML, CSS, and JavaScript. Using my
-                creative abilities, I can also design a beautiful product to help bring your product or
-                business to life.
-              </p>
-              <p>
-                Have something in mind? Contact me on <a href="https://github.com/codywilliamson" target="_blank">GitHub</a>.
-              </p>
-            </div>
-        </div>
-      </section> <!-- end ABOUT -->
-
-<!-- PROJECTS section -->
-    <section id="Projects">
-      <h2 class="subtitle">Projects</h2>
-      <div class="wrapper">
-        <div class="projects">
-        <div class="project-card">
-          <div class="project-image">
-            <a href="https://isbelllawncare.com" target="_blank">
-              <img src="assets/isbell-lawn-care.png" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
+              <p>Static site designed and built for a local business to increase their web presence for the community to find.</p>
             </a>
-          </div>
-          <div class="project-info">
-            <p>I built this client website using the big 3 (HTML/CSS/minimal-JS). It was deployed in March 2019 on Netlify.</p>
+            </div>
           </div>
         </div>
       </div>
-      </div>
 
-      <div class="wrapper">
-        <div class="projects">
+    <div class="wrapper">
+      <div class="projects">
         <div class="project-card">
           <div class="project-image">
             <a href="https://mobile-first-cw.netlify.com/" target="_blank">
-              <img src="assets/williamson-web.png" alt="Screenshot of a fake company website built by Cody Williamson to showcase his skills">
-            </a>
+              <img src="assets/williamson-web.jpg" alt="Screenshot of a fake company website built by Cody Williamson to showcase his skills">
           </div>
           <div class="project-info">
-            <p>I built this website to practice some design skills, semantic HTML, and learn form handling. It was deployed in March 2019 on Netlify.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
-
-      <!-- SERVICES page -->
-      <section class="services" id="Services">
-        <h2 class="subtitle">Services</h2>
-        <div class="wrapper">
-          <div class="card">
-            <h3 class="card-title"><i class="fas fa-crop fa-fw"></i> Design</h3>
-            <p class="card-info">
-              Using modern web design methodologies, I'll design an end product catered to your vision.
-              Or I can take whatever design you provide and bring it to life.
-            </p>
-            <ul class="responsive-icons">
-              <li><a href="https://www.flaticon.com/authors/freepik" target="_blank"><img src="assets/001-responsive-design-symbol.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"></a></li>
-              <li><a href="https://www.flaticon.com/authors/freepik"><img src="assets/002-responsive.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"></a></li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3 class="card-title"><i class="fab fa-connectdevelop fa-fw"></i> Develop</h3>
-            <p class="card-info">
-              HTML, CSS, & JavaScript will be the foundation. Want to add content yourself?
-              I can build your site ontop of WordPress, too.
-            </p>
+            <h4>Williamson Web Solutions</h4>
             <ul class="technologies">
-              <li><img src="assets/html5logo.svg" alt="HTML5 logo" class="icons"></li>
-              <li><img src="assets/css3.svg" alt="CSS3 logo" class="icons"></li>
-              <li><img src="assets/javascript-1.svg" alt="JavaScript logo" class="icons"></li>
-              <li><img src="assets/wordpress-blue.svg" alt="WordPress logo" class="icons"></li>
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3-alt"></i></li>
             </ul>
-          </div>
-          <div class="card">
-            <h3 class="card-title"><i class="fas fa-plus fa-fw"></i> Create</h3>
-            <p class="card-info">
-              Working together, we'll create a product you'll love. Your satisfaction is
-              my number one priority.
-            </p>
-            <p class="call-to-action">
-              <img src="assets/respect.svg" alt="Free icon provided by Freepik @ flaticon.com" class="icons"><a href="#Contact">Let's get to work.</a>
-            </p>
+            <p>Static site built to practice design skills, semantic HTML, and template conversion.</p>
+          </a>
           </div>
         </div>
-      </section> <!-- end services -->
-
-      <!-- CONTACT page -->
-      <section class="contact" id="Contact">
-        <h2 class="subtitle">Contact Me</h2>
-          <form class="form" action="https://formspree.io/codywscw@gmail.com" method="POST">
-            <input class="feedback" type="text" name="name" placeholder="Name">
-            <input class="feedback" type="email" name="email" placeholder="Email">
-            <textarea class="feedback" name="text" placeholder="What do you need?"></textarea>
-            <input type="submit" name="submit" value="SUBMIT">
-          </form>
-      </section> <!-- end CONTACT -->
-
-      <!-- FOOTER NAV -->
-      <footer class="footer">
-        <div class="flex-container">
-          <ul class="navbar-footer">
-            <li class="nav-link"><a href="#Home">Home</a></li>
-            <li class="nav-link"><a href="#About">About</a></li>
-            <li class="nav-link"><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-      </footer> <!-- end footer nav -->
+      </div>
     </div>
 
-    </main>
+  </section>
+
+  <!-- about section -->
+  <section id="about">
+    <div class="about-container">
+
+      <h2 class="section-title">As a Front End Dev, I can build...</h2>
+
+      <div class="skill-card-container">
+        <div class="skill-card">
+          <div class="skill-title">
+            <h3>
+             Beautiful Landing Pages
+            </h3>
+          </div>
+          <hr class="skill-hr">
+          <div class="skill-info">
+            <p>
+              Perfect for business pages needing to increase their web presence and increase sales.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="skill-card">
+          <div class="skill-title">
+            <h3>
+              Dynamic WordPress Sites
+            </h3>
+          </div>
+          <hr class="skill-hr">
+          <div class="skill-info">
+            <p>
+              Perfect for adding your own content and making things your own. Useful for blogs, ecommerce, and more.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="skill-card">
+          <div class="skill-title">
+            <h3>
+              Responsive &amp; Lightweight Sites
+            </h3>
+          </div>
+          <hr class="skill-hr">
+          <div class="skill-info">
+            <p>
+              Regardless of the project, I will ensure its built for the modern web -- cross-browser compatible, mobile responsive, accessible, lightweight, and fast.
+            </p>
+          </div>
+        </div>
+
+    </div> <!-- end skill wrapper -->
+
+    <div class="tech-used">
+      <h3 class="tech-title">
+        Technologies I Use
+      </h3>
+      <div class="tech">
+        <img src="assets/icons/html5logo.svg" alt="HTML5 svg icon" class="tech-icons">
+        <img src="assets/icons/css3.svg" alt="CSS3 svg icon" class="tech-icons">
+        <img src="assets/icons/javascript-1.svg" alt="JavaScript svg icon" class="tech-icons">
+        <img src="assets/icons/wordpress-blue.svg" alt="WordPress svg icon" class="tech-icons">
+        <img src="assets/icons/github-1.svg" alt="GitHub svg icon" class="tech-icons">
+        <img src="assets/icons/sass-1.svg" alt="Sass svg icon" class="tech-icons">
+        <img src="assets/icons/netlify.svg" alt="Netlify svg icon" class="tech-icons">
+        <img src="assets/icons/google-1.svg" alt="Google svg icon" class="tech-icons">
+        <img src="assets/icons/jquery-1.svg" alt="JQuery svg icon" class="tech-icons">
+      </div>
+    </div>
+
+  </div>
+  </section> <!-- end about -->
+
+  <!-- Contact Header -->
+  <section id="contact">
+        <div class="contact-header">
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <a href="mailto:codywscw@gmail.com" class="contact-icons"><i class="fas fa-at"></i></a>
+            <a href="tel:2569758586" class="contact-icons"><i class="fas fa-phone"></i></a>
+            <a href="https://facebook.com/cody.www" class="contact-icons"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/codywilliamson" class="contact-icons"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/cody.williamson/" class="contact-icons"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="form-container">
+            <form class="form" action="/thanks.html" data-netlify="true" name="contact" method="POST">
+              <input type="text" name="Name" placeholder="First &amp; Last Name" required tabindex="1">
+              <input type="email" name="Email" placeholder="Email Address" required tabindex="2">
+              <input type="url" name="URL" placeholder="Website (optional)" tabindex="3">
+              <textarea name="comments" placeholder="Brief message describing what you need" tabindex="4" required></textarea>
+              <button type="submit" name="submit" class="contact-submit">Submit</button>
+              <p class="copyright">Form inspired by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+
+            </form>
+          </div>
+        </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <a href="#home">Back to top</a>
+    <p>&copy; Cody Williamson / b: Apr 2019, subject to change.</p>
+  </footer>
+
   </body>
 
 </html>

@@ -1,27 +1,52 @@
-(function($) {
-  $(function() { //DOM ready
-    // target any a in the menu that has any children, then toggle .nav-dropdown class
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // prevents all dropdowns opening when only one is clicked
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    }); // end prevent dropdowns
-    // hide if click away
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    }); // end hide
-    // toggle open, close styles on nav
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    }); // end toggle
-    // toggle hamburger
-     $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    }); // end toggle hamburger
-  });
- })(jQuery);
+/*
+  smooth scroll from w3schools
+  link: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+*/
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
- const scroll = new SmoothScroll('.navigation a[href*="#"]', {
-  speed: 50
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
+
+$('.nav__trigger',).on('click', function(e){
+     e.preventDefault();
+     $(this).parent().toggleClass('nav--active').show();
+   });
+
+$('.nav li').on('click', function(){
+  $(".nav__trigger").parent().removeClass("nav--active");
+  $(".nav__icon").removeClass("nav--active");
+});
+
+var myNav = document.querySelector("nav");
+var nav = document.querySelector(".nav__list");
+
+window.onscroll = function() {
+  "use strict";
+  if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+    nav.classList.add("scrolled");
+    myNav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+    myNav.classList.remove("scrolled");
+  }
+};
