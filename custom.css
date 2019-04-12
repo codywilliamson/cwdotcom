@@ -44,7 +44,7 @@ html {
   --accent: #388cd8;
   --grey: #57606f;
   --section: 100vh;
-  --duration: 300ms;
+  --duration: 500ms;
   --ease: ease-in-out;
   --nav-color: #fff;
   --nav-bg-active: #333;
@@ -54,10 +54,11 @@ html {
 body {
   background: var(--darkWhite);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body.no-scroll {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* Navigation */
@@ -324,12 +325,10 @@ body.no-scroll {
 }
 
 .button:hover {
-  -webkit-box-shadow: 0px 0px 29px -1px rgba(245,245,245,0.62);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(245,245,245,0.62);
   -moz-box-shadow: 0px 0px 29px -1px rgba(245,245,245,0.62);
-  box-shadow: 0px 0px 29px -1px rgba(245,245,245,0.62);
-  border-radius: 20px;
-  background-color: var(--secondaryColor);
-  border: 2px solid var(--tertiaryColor);
+  box-shadow: 0px 0px 10px -1px rgba(245,245,245,0.62);
+  border-radius: 5px;
 }
 
 .icon {
@@ -384,10 +383,11 @@ body.no-scroll {
   margin-bottom: 15px;
   font-family: var(--roboto);
   position: relative;
-  -webkit-box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 12px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 12px -2px rgba(0,0,0,0.75);
   transition: all var(--duration) var(--ease);
+  border-radius: 10px;
 }
 
 @media (max-width: 500px) {
@@ -403,14 +403,15 @@ body.no-scroll {
 }
 
 .project-card:hover {
-  -webkit-box-shadow: 0px 14px 12px -2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 14px 12px -2px rgba(0,0,0,0.75);
-  box-shadow: 0px 14px 12px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 7px 12px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 7px 12px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 7px 12px -2px rgba(0,0,0,0.75);
 }
 
 .project-image img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .project-info {
@@ -419,6 +420,8 @@ body.no-scroll {
   background: var(--white);
   width: 100%;
   padding: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .project-info h4 {
@@ -448,7 +451,7 @@ body.no-scroll {
   flex-direction: column;
   font-family: 'Montserrat', Helveltica, Arial, sans-serif;
   color: #545454;
-  padding: 75px 10px;
+  padding: 180px 10px;
   font-weight: 500;
 }
 
@@ -467,7 +470,7 @@ body.no-scroll {
   align-items: center;
   justify-content: space-evenly;
   flex-flow: row wrap;
-  margin: 100px auto;
+  margin: 100px 0 75px;
   transition: all var(--duration) var(--ease);
 }
 
@@ -517,15 +520,16 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: var(--darkWhite);
-  -webkit-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
-  -moz-box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
-  box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.53);
+  background: #fff;
+  -webkit-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.53);
+  -moz-box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.53);
+  box-shadow: 0px 5px 12px -2px rgba(0,0,0,0.53);
   width: 35vw;
   min-width: 236px;
   height: auto;
   border-radius: 10px;
   padding: 20px;
+  margin-bottom: 100px;
   font-family: 'Montserrat', Helveltica, Arial, sans-serif;
   transition: all var(--duration) var(--ease);
 }
@@ -557,14 +561,19 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: var(--white);
 }
 
 .contact-header {
   width: 100vw;
   padding: 110px;
   text-align: center;
+  margin-top: -175px;
   margin-bottom: 100px;
   background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-clip-path: polygon(0 6%, 100% 35%, 100% 100%, 0 70%);
   clip-path: polygon(0 6%, 100% 35%, 100% 100%, 0 70%);
 }
@@ -575,7 +584,7 @@ body.no-scroll {
 
 .contact-container {
   width: 50vw;
-  min-width: 330px;
+  min-width: 290px;
   height: 330px;
   background: #fff;
   border-radius: 20px;
@@ -773,6 +782,7 @@ textarea:focus {
 
 /* basic footer */
 footer {
+  font-family: 'Montserrat', Helveltica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
