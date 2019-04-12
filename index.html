@@ -3,29 +3,32 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- FOR TESTING ONLY
-    <meta http-equiv="refresh" content="10" >
-     COMMENT OUT ON RELEASE -->
+    <meta name="description" content="Portfolio site for Freelance Web Developer Cody Williamson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="C.W. / Front End Developer" />
+    <meta property="og:url" content="https://codywilliamson.com" />
+    <meta property="og:image" content="assets/logo.jpg" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="custom.css" />
     <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous" defer></script>
     <script src="scripts.js" defer></script>
     <title>C.W. | Web Developer </title>
   </head>
   <body>
+    <noscript>This site uses JavaScript for some simple animations, so even though your browser does not support JavaScript, it should be fine.</noscript>
     <header class="navigation">
       <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item"><span>C. Williamson</span></li>
-      <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+      <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
       <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
       <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-      <li class="nav__item"><a class="nav__link" href="#">Contact Me</a></li>
+      <li class="nav__item"><a class="nav__link" href="#contact">Contact Me</a></li>
     </ul>
   </nav>
     </header>
@@ -56,7 +59,7 @@
           <div class="project-card">
             <div class="project-image">
               <a href="https://isbelllawncare.com" target="_blank">
-                <img src="assets/isbell-lawn-care.png" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
+                <img src="assets/isbell-lawn-care.jpg" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
             </div>
             <div class="project-info">
               <h4>Isbell Lawn Care</h4>
@@ -77,7 +80,7 @@
         <div class="project-card">
           <div class="project-image">
             <a href="https://mobile-first-cw.netlify.com/" target="_blank">
-              <img src="assets/williamson-web.png" alt="Screenshot of a fake company website built by Cody Williamson to showcase his skills">
+              <img src="assets/williamson-web.jpg" alt="Screenshot of a fake company website built by Cody Williamson to showcase his skills">
           </div>
           <div class="project-info">
             <h4>Williamson Web Solutions</h4>
@@ -153,20 +156,55 @@
         Technologies I Use
       </h3>
       <div class="tech">
-        <img src="assets/html5logo.svg" alt="HTML5 svg icon" class="tech-icons">
-        <img src="assets/css3.svg" alt="CSS3 svg icon" class="tech-icons">
-        <img src="assets/javascript-1.svg" alt="JavaScript svg icon" class="tech-icons">
-        <img src="assets/wordpress-blue.svg" alt="WordPress svg icon" class="tech-icons">
-        <img src="assets/github-1.svg" alt="GitHub svg icon" class="tech-icons">
-        <img src="assets/sass-1.svg" alt="Sass svg icon" class="tech-icons">
-        <img src="assets/netlify.svg" alt="Netlify svg icon" class="tech-icons">
-        <img src="assets/google-1.svg" alt="Google svg icon" class="tech-icons">
-        <img src="assets/jquery-1.svg" alt="JQuery svg icon" class="tech-icons">
+        <img src="assets/icons/html5logo.svg" alt="HTML5 svg icon" class="tech-icons">
+        <img src="assets/icons/css3.svg" alt="CSS3 svg icon" class="tech-icons">
+        <img src="assets/icons/javascript-1.svg" alt="JavaScript svg icon" class="tech-icons">
+        <img src="assets/icons/wordpress-blue.svg" alt="WordPress svg icon" class="tech-icons">
+        <img src="assets/icons/github-1.svg" alt="GitHub svg icon" class="tech-icons">
+        <img src="assets/icons/sass-1.svg" alt="Sass svg icon" class="tech-icons">
+        <img src="assets/icons/netlify.svg" alt="Netlify svg icon" class="tech-icons">
+        <img src="assets/icons/google-1.svg" alt="Google svg icon" class="tech-icons">
+        <img src="assets/icons/jquery-1.svg" alt="JQuery svg icon" class="tech-icons">
       </div>
     </div>
 
   </div>
   </section> <!-- end about -->
+
+  <!-- Contact Header -->
+  <section id="contact">
+        <div class="contact-header">
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <a href="mailto:codywscw@gmail.com" class="contact-icons"><i class="fas fa-at"></i></a>
+            <a href="tel:2569758586" class="contact-icons"><i class="fas fa-phone"></i></a>
+            <a href="https://facebook.com/cody.www" class="contact-icons"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/codywilliamson" class="contact-icons"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/cody.williamson/" class="contact-icons"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="form-container">
+            <form class="form" action="/thanks.html" data-netlify="true" name="contact" method="POST">
+              <input type="text" name="Name" placeholder="First &amp; Last Name" required tabindex="1">
+              <input type="email" name="Email" placeholder="Email Address" required tabindex="2">
+              <input type="url" name="URL" placeholder="Website (optional)" tabindex="3">
+              <textarea name="comments" placeholder="Brief message describing what you need" tabindex="4" required></textarea>
+              <button type="submit" name="submit" class="contact-submit">Submit</button>
+              <p class="copyright">Form inspired by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+
+            </form>
+          </div>
+        </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer>
+    <a href="#home">Back to top</a>
+    <p>&copy; Cody Williamson / b: Apr 2019, subject to change.</p>
+  </footer>
 
   </body>
 
