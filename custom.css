@@ -97,11 +97,31 @@ body.no-scroll {
 .nav__link {
   font-size: 1.5em;
   text-decoration: none;
+  position: relative;
   color: var(--white);
   opacity: 1;
   -webkit-transition: opacity var(--duration) var(--ease);
   -o-transition: opacity var(--duration) var(--ease);
   transition: opacity var(--duration) var(--ease);
+}
+.nav__link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondaryColor);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all var(--duration) var(--ease) 0s;
+  transition: all var(--duration) var(--ease) 0s;
+}
+.nav__link:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .nav__link:hover {
@@ -591,12 +611,28 @@ body.no-scroll {
 }
 
 .connect {
+  position: relative;
   color: var(--accent);
-}
-
-.connect a {
   text-decoration: none;
-  color: inherit;
+}
+.connect:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--tertiaryColor);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all var(--duration) var(--ease) 0s;
+  transition: all var(--duration) var(--ease) 0s;
+}
+.connect:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .section-title {
