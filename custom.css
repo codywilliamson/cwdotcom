@@ -404,6 +404,9 @@ body.no-scroll {
   .button {
     padding: 5px;
   }
+  .buttons {
+    padding-bottom: 20px;
+  }
 }
 
 .button:hover {
