@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // set countDown Date
 
-var countDownDate = new Date('May 05, 2020').getTime();
+var countDownDate = new Date('May 18, 2020').getTime();
 var timer = document.querySelector(".timer");
 
 // set interval to every 1 second
