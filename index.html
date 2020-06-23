@@ -3,307 +3,51 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="google-site-verification" content="78ATjXd3PdkUVEdBrzhjpVTBxKjoLpvTD4u0gi3aaeU" />
-    <meta name="description" content="Portfolio site for Freelance Web Developer Cody Williamson">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="C.W. / Front End Developer" />
-    <meta property="og:url" content="https://codywilliamson.com" />
-    <meta property="og:image" content="assets/logo.jpg" />
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="custom.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#111111">
-    <meta name="theme-color" content="#ffffff">
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous" defer></script>
     <script src="scripts.js" defer></script>
     <script src="https://kit.fontawesome.com/25555e75b6.js"></script>
     <title>Cody Williamson</title>
   </head>
   <body>
-    <noscript>This site uses JavaScript for some simple animations, so even though your browser does not support JavaScript, it should be fine.</noscript>
-    <header class="navigation">
-      <a href="#" class="nav__trigger"><span class="nav__icon"></span></a>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item"><span>C. Williamson</span></li>
-      <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-      <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
-      <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-      <li class="nav__item"><a class="nav__link" href="#contact">Contact Me</a></li>
-    </ul>
-  </nav>
-    </header>
 
   <!-- hero section -->
   <section id="home">
     <div class="hero-bg">
       <div class="hero-info">
         <h1 class="hero-title">Hey, I'm Cody.</h1>
-        <p class="hero-tagline"> I'm a Web Applications Developer at NASA. The front end is my focus, but I’ve worked on all aspects of web development from back end to front end, design, architecture, and more. If you wanna chat, <a href=“#contact”>contact me</a> below.</p>
-        <div class="buttons">
-         <a href="#projects" class="button">View My Work</a>
-        <!--  <a title="For privacy, this is password protected." href="assets/cwilliamson.pdf" class="button">Résumé</a> -->
-          <a title="My best showcase of my skills to date" href="https://github.com/codywilliamson" class="icon" target="_blank" rel="noopener"><i class="fab fa-github fa-fw"></i></a>
-          <a title="Where I write about code" href="https://dev.to/codywilliamson" target="_blank" rel="noopener" class="icon"><i class="fab fa-dev fa-fw"></i></a>
-      </div>
+        <p class="hero-tagline">
+          I'm a Web Applications Developer at NASA. The front end is my focus, but I’ve worked 
+          on all aspects of web development from back end to front end, design, architecture, 
+          and more. This used to be my portfolio, but it is currently under construction due to 
+          being largely outdated. Come back another time.
+           If you wanna chat, <a href=“mailto:codywscw@gmail.com”>email me</a>.
+        </p>
+
+
+      <!-- <div class="contact-container">
+        <div class="contact-info">
+          <a href="tel:2569758586" class="contact-icons"><i class="fas fa-phone"></i></a>
+          <a href="mailto:codywscw@gmail.com" class="contact-icons"><i class="fas fa-at"></i></a>
+          <a href="https://github.com/codywilliamson" class="contact-icons"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/cody.williamson/" class="contact-icons"><i class="fab fa-instagram"></i></a> 
+        </div>
+        <div class="form-container">
+          <form class="form" action="/thanks.html" data-netlify="true" name="contact" method="POST">
+            <input type="text" name="Name" placeholder="First &amp; Last Name" required tabindex="1">
+            <input type="email" name="Email" placeholder="Email Address" required tabindex="2">
+            <input type="url" name="URL" placeholder="Website (optional)" tabindex="3">
+            <textarea name="comments" placeholder="Brief message describing what you need" tabindex="4" required></textarea>
+            <button type="submit" name="submit" class="contact-submit">Submit</button>
+          </form>
+        </div>
+      </div> -->
     </div>
     </div>
+
+    
+
   </section> <!-- end hero -->
-
-  <!-- projects section -->
-  <section id="projects">
-
-    <h2 class="section-title">Projects</h2>
-
-        <div class="projects">
-            <div class="project-card">
-              <div class="project-image">
-                <a href="https://isbelllawncare.com" target="_blank">
-                  <img src="assets/isbell-lawn-care-mockup.jpg" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
-              </div>
-              <div class="project-info">
-                <h4>Isbell Lawn Care</h4>
-                <ul class="technologies">
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                  <li><i class="fab fa-js-square"></i></li>
-                </ul>
-                <p>Static site designed and built for a local business to increase their web presence for the community to find.</p>
-              </a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projects">
-            <div class="project-card">
-              <div class="project-image">
-                <a href="https://nealovarian.netlify.com/" target="_blank">
-                  <img src="assets/avery-site.jpg" alt="Screenshot of Sales Page by Cody Williamson">
-              </div>
-              <div class="project-info">
-                <h4>Neal Ovarian E-Book Sales Page</h4>
-                <ul class="technologies">
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                  <li><i class="fab fa-js-square"></i></li>
-                  <li><i class="fab fa-paypal"></i></li>
-                </ul>
-                <p>Client site built to drive sales towards their e-book, with PayPal integration and more.</p>
-              </a>
-              <a class="repo-link" href="https://github.com/codywilliamson/budget-app">Check out the repo <i class="fas fa-external-link-square-alt repo-link"></i></a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projects">
-            <div class="project-card">
-              <div class="project-image">
-                <a href="https://cw-landing-page.netlify.com/" target="_blank">
-                  <img src="assets/landing-page-mockup.jpg" alt="Screenshot of Isbell Lawn Care's website built by Cody Williamson">
-              </div>
-              <div class="project-info">
-                <h4>Landing Page</h4>
-                <ul class="technologies">
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                </ul>
-                <p>Static site built to practice landing page design, mobile first, and HTML/CSS.</p>
-              </a>
-              <a class="repo-link" href="https://github.com/codywilliamson/landing-page">Check out the repo <i class="fas fa-external-link-square-alt repo-link"></i></a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projects">
-            <div class="project-card">
-              <div class="project-image">
-                <a href="https://cw-budget-app.netlify.com/" target="_blank">
-                  <img src="assets/budgetAppv1.jpg" alt="Screenshot of Budget App by Cody Williamson">
-              </div>
-              <div class="project-info">
-                <h4>Personal Budget App</h4>
-                <ul class="technologies">
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                  <li><i class="fab fa-js-square"></i></li>
-                  <li><i class="fab fa-bootstrap"></i></li>
-                </ul>
-                <p>v1 of a personal budget application built to practice JS.</p>
-              </a>
-              <a class="repo-link" href="https://github.com/codywilliamson/budget-app">Check out the repo <i class="fas fa-external-link-square-alt repo-link"></i></a>
-              </div>
-            </div>
-          </div>
-  
-          <div class="projects">
-            <div class="project-card">
-              <div class="project-image">
-                <a href="https://github.com/codywilliamson/web-project-starter" target="_blank">
-                  <img src="assets/project-starter.jpg" alt="Project Starter Logo by Cody Williamson">
-              </div>
-              <div class="project-info">
-                <h4>Tool &mdash; Web Project Starter</h4>
-                <ul class="technologies">
-                  <li><i class="fas fa-tools"></i></li>
-                  <li><i class="fab fa-html5"></i></li>
-                  <li><i class="fab fa-css3-alt"></i></li>
-                  <li><i class="fab fa-js-square"></i></li>
-                  <li><i class="fab fa-sass"></i></li>
-                </ul>
-                <p>Repo created to rapidly start projects. I built this tool because I was spending way too much time just getting projects set up.</p>
-              </a>
-              <a class="repo-link" href="https://github.com/codywilliamson/web-project-starter">Check out the repo <i class="fas fa-external-link-square-alt repo-link"></i></a>
-              </div>
-            </div>
-
-    </div>
-
-  </section>
-
-  <!-- about section -->
-  <section id="about">
-    <div class="about-container">
-
-      <div class="info-container">
-        <h2 class="section-title">My Story...</h2>
-
-        <div class="info-right">
-          <p class="about-me text">
-            Hey there. I’m a self-taught front end web developer. I’ve been teaching myself to code for over five years now. I have a serious passion for building something that is <em>functionally beautiful</em>.
-            <br>
-            <br>
-            The most important part of my life is my wife and son. Without them, I wouldn’t be who I am today. I definitely wouldn’t be the developer I am without their motivation for me to succeed.
-            <br>
-            <br>
-            Anyways, that’s about it. If you’re a prospective client, let’s <span><a href="#contact" class="connect">connect</a></span>. I look forward to working with you!
-          </p>
-        </div>
-
-        <div class="info-left">
-          <img src="assets/logo-3.png" alt="Cody Williamson's logo" class="logo-img">
-        </div>
-
-      </div>
-
-      <h2 class="section-title title-3">I Can Build...</h2>
-
-      <div class="skill-card-container">
-        <div class="skill-card">
-          <div class="skill-title">
-            <h3>
-             Beautiful Landing Pages
-            </h3>
-          </div>
-          <hr class="skill-hr">
-          <div class="text">
-            <p>
-              Perfect for business pages needing to increase their web presence and increase sales.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-title">
-              <h3>
-                Responsive &amp; Lightweight Sites
-              </h3>
-            </div>
-            <hr class="skill-hr">
-            <div class="text">
-              <p>
-                Regardless of the project, I will ensure its built for the modern web -- cross-browser compatible, mobile responsive, accessible, lightweight, and fast.
-              </p>
-            </div>
-          </div>
-
-
-        <div class="skill-card">
-          <div class="skill-title">
-            <h3>
-              Dynamic CMS Sites
-            </h3>
-          </div>
-          <hr class="skill-hr">
-          <div class="text">
-            <p>
-              Perfect for adding your own content and making things your own. Useful for blogs, e-commerce, and more.
-            </p>
-          </div>
-        </div>
-
-
-    </div> <!-- end skill wrapper -->
-
-    <div class="tech-used">
-      <h3 class="tech-title">
-        Technologies I Use
-      </h3>
-      <div class="tech">
-        <img src="assets/icons/html5logo.svg" alt="HTML5 svg icon" class="tech-icons">
-        <img src="assets/icons/css3.svg" alt="CSS3 svg icon" class="tech-icons">
-        <img src="assets/icons/javascript-1.svg" alt="JavaScript svg icon" class="tech-icons">
-        <img src="assets/icons/sass-1.svg" alt="SASS svg icon" class="tech-icons">
-        <img src="assets/icons/wordpress-blue.svg" alt="WordPress svg icon" class="tech-icons">
-        <img src="assets/icons/github-1.svg" alt="GitHub svg icon" class="tech-icons">
-        <img src="assets/icons/netlify.svg" alt="Netlify svg icon" class="tech-icons">
-        <img src="assets/icons/google-1.svg" alt="Google svg icon" class="tech-icons">
-        <img src="assets/icons/jquery-1.svg" alt="JQuery svg icon" class="tech-icons">
-        <img src="assets/icons/terminal.svg" alt="Terminal svg icon" class="tech-icons">
-        <img src="assets/icons/php.svg" alt="PHP svg icon" class="tech-icons">
-        <img src="assets/icons/vscode.svg" alt="VSCode svg icon" class="tech-icons">
-        <img src="assets/icons/mysql.svg" alt="MySQL svg icon" class="tech-icons">
-        <img src="assets/icons/npm.svg" alt="NPM svg icon" class="tech-icons">
-        <img src="assets/icons/visualstudio-plain.svg" alt="NPM svg icon" class="tech-icons">
-        <img src="assets/icons/ssh-original.svg" alt="NPM svg icon" class="tech-icons">
-        <img src="assets/icons/bootstrap-plain.svg" alt="NPM svg icon" class="tech-icons">
-        <img src="assets/icons/react-original.svg" alt="NPM svg icon" class="tech-icons">
-        <img src="assets/icons/dot-net-original.svg" alt="NPM svg icon" class="tech-icons">
-      </div>
-    </div>
-
-  </div>
-  </section> <!-- end about -->
-
-  <!-- Contact Header -->
-  <section id="contact">
-
-        <div class="contact-header">
-          <h2 class="section-title">Contact Me</h2>
-        </div>
-
-        <div class="contact-container">
-          <div class="contact-info">
-            <a href="tel:2569758586" class="contact-icons"><i class="fas fa-phone"></i></a>
-            <a href="mailto:codywscw@gmail.com" class="contact-icons"><i class="fas fa-at"></i></a>
-            <a href="https://github.com/codywilliamson" class="contact-icons"><i class="fab fa-github"></i></a>
-            <!-- <a href="https://www.instagram.com/cody.williamson/" class="contact-icons"><i class="fab fa-instagram"></i></a> -->
-          </div>
-          <div class="form-container">
-            <form class="form" action="/thanks.html" data-netlify="true" name="contact" method="POST">
-              <input type="text" name="Name" placeholder="First &amp; Last Name" required tabindex="1">
-              <input type="email" name="Email" placeholder="Email Address" required tabindex="2">
-              <input type="url" name="URL" placeholder="Website (optional)" tabindex="3">
-              <textarea name="comments" placeholder="Brief message describing what you need" tabindex="4" required></textarea>
-              <button type="submit" name="submit" class="contact-submit">Submit</button>
-            </form>
-          </div>
-        </div>
-  </section>
-
-  <!-- footer -->
-
-  <footer>
-    <a href="#home">Back to top</a>
-    <p>&copy; Cody Williamson / b: Apr 2019</p>
-  </footer>
 
   </body>
 
