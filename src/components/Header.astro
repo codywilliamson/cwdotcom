@@ -1,0 +1,93 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../consts";
+import { Image } from "astro:assets";
+import logo from "../assets/svgs/logo.svg";
+---
+
+<header
+	class="sticky top-0 z-20 bg-custom-black text-custom-white flex justify-between items-center p-4 transition-shadow duration-75 ease-in-out"
+>
+	<a
+		href="/"
+		class="flex items-center hover:text-custom-white decoration-none"
+	>
+		<div class="h-8 w-8 mr-2 flex items-center">
+			<Image src={logo} alt="Cody Williamson's Personal Site logo" />
+		</div>
+		<span class="text-xl font-bold">{SITE_TITLE}</span>
+	</a>
+	<nav id="NavMenu">
+		<ul
+			class="flex space-x-4 text-custom-white transition-all duration-300 ease-in-out"
+		>
+			<li>
+				<a
+					href="/blog"
+					class="hover:text-custom-green transition-all duration-100 ease-in-out"
+					>Blog</a
+				>
+			</li>
+			<li>
+				<a
+					href="/experience"
+					class="hover:text-custom-green transition-all duration-100 ease-in-out"
+					>Experience</a
+				>
+			</li>
+			<li>
+				<a
+					href="/work"
+					class="hover:text-custom-green transition-all duration-100 ease-in-out"
+					>Work</a
+				>
+			</li>
+			<li>
+				<a
+					href="/collab"
+					class="hover:text-custom-green transition-all duration-100 ease-in-out"
+					>Collab</a
+				>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<script>
+	document.addEventListener("DOMContentLoaded", (event) => {
+		const header = document.querySelector("header");
+
+		function addShadowOnScroll() {
+			if (window.scrollY > 0) {
+				header?.classList.add("shadow-2xl");
+			} else {
+				header?.classList.remove("shadow-2xl");
+			}
+		}
+
+		window.addEventListener("scroll", addShadowOnScroll);
+
+		// Ensure TypeScript checks the types of the elements
+		const navLinks = document.querySelectorAll(
+			"#NavMenu a"
+		) as NodeListOf<HTMLAnchorElement>;
+
+		// Add event listener to all nav links
+		navLinks.forEach((link) => {
+			link.addEventListener("click", function (event: MouseEvent) {
+				event.preventDefault();
+
+				// Remove 'active' classes from all links
+				navLinks.forEach((navLink) => {
+					navLink.classList.remove("font-bold", "text-custom-green");
+				});
+
+				// Add 'active' class to the clicked link
+				this.classList.add("font-bold", "text-custom-green");
+
+				// Navigate to the clicked link's href
+				window.location.href = this.href;
+			});
+		});
+	});
+</script>
