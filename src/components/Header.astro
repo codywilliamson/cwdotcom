@@ -6,21 +6,22 @@ import logo from "../assets/svgs/logo.svg";
 ---
 
 <header
-	class="sticky top-0 z-20 bg-custom-black text-custom-white flex justify-between items-center p-4 transition-shadow duration-75 ease-in-out"
->
+	class="sticky top-0 z-20 bg-custom-black text-custom-white flex justify-between items-center p-4 transition-shadow duration-75 ease-in-out">
 	<a
 		href="/"
-		class="flex items-center hover:text-custom-white decoration-none"
-	>
+		class="flex items-center hover:text-custom-white decoration-none">
 		<div class="h-8 w-8 mr-2 flex items-center">
-			<Image src={logo} alt="Cody Williamson's Personal Site logo" />
+			<Image
+				src={logo}
+				alt="Cody Williamson's Personal Site logo"
+			/>
 		</div>
 		<span class="text-xl font-bold">{SITE_TITLE}</span>
 	</a>
 	<nav id="NavMenu">
 		<ul
-			class="flex space-x-4 text-custom-white transition-all duration-300 ease-in-out"
-		>
+			class="flex space-x-4 text-custom-white transition-all duration-300 ease-in-out flex-col absolute left-0 right-0 w-full
+					text-center justify-center backg">
 			<li>
 				<a
 					href="/blog"
@@ -33,7 +34,7 @@ import logo from "../assets/svgs/logo.svg";
 					href="/experience"
 					class="hover:text-custom-green transition-all duration-100 ease-in-out"
 					>Experience</a
-				>
+				> 
 			</li>
 			<li>
 				<a
@@ -50,6 +51,19 @@ import logo from "../assets/svgs/logo.svg";
 				>
 			</li>
 		</ul>
+		<button
+			class="w-12 h-12 rounded-xl bg-custom-green flex items-center justify-center
+					transition duration-300 group scale-100 sm:scale-0 hover:rotate-90">
+			<div
+				class="w-8 h-0.5 bg-white transition duration-300 scale-0 rotate-90 group-hover:scale-100 group-hover:translate-x-2">
+			</div>
+			<div
+				class="w-8 h-0.5 bg-white transition duration-300 group-hover:rotate-90">
+			</div>
+			<div
+				class="w-8 h-0.5 bg-white transition duration-300 scale-0 rotate-90 group-hover:scale-100 group-hover:-translate-x-2">
+			</div>
+		</button>
 	</nav>
 </header>
 
