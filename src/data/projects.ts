@@ -44,7 +44,7 @@ const projects: Project[] = [
     isComingSoon: true
   },
   {
-    title: "... and so many others not publically available",
+    title: "... and so many others not publicly available",
     techs: ["C#", "Azure", "Angular", "Python", "PowerShell"],
     link: "/",
     isComingSoon: true
