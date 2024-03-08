@@ -45,7 +45,7 @@ const projects: Project[] = [
   },
   {
     title: "... and so many others not publicly available",
-    techs: ["C#", "Azure", "Angular", "Python", "PowerShell"],
+    techs: ["C#", "Azure", "Blazor", "PowerShell", "..."],
     link: "/",
     isComingSoon: true
   },
