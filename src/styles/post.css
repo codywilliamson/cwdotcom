@@ -37,3 +37,30 @@
 .post pre > code {
   @apply bg-transparent;
 }
+
+.post table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.post table, .post th, .post td {
+  border: 1px solid #ddd;
+}
+
+.post th, .post td {
+  text-align: left;
+  padding: 8px;
+}
+
+.post th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.post tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.post tr:hover {
+  background-color: #eaeaea;
+}
