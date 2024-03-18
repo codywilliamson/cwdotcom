@@ -44,7 +44,7 @@
 }
 
 .post table, .post th, .post td {
-  border: 1px solid #ddd;
+  border: 1px solid #ccc; /* Lighter border for less visual weight */
 }
 
 .post th, .post td {
@@ -53,14 +53,22 @@
 }
 
 .post th {
-  background-color: #f2f2f2;
+  background-color: #e6e6e6; /* A slightly darker shade for headers */
   color: #333;
 }
 
+.post tr:nth-child(odd) {
+  background-color: #f7f7f7; /* A very light gray for odd rows */
+}
+
 .post tr:nth-child(even) {
-  background-color: #f9f9f9;
+  background-color: #eef2f5; /* A subtle blue-tinted gray for even rows */
 }
 
 .post tr:hover {
-  background-color: #eaeaea;
+  background-color: #dfe3e8; /* A slightly darker shade for hover state */
+}
+
+.post td, .post th {
+  color: #333; /* Darker text for better readability */
 }
