@@ -34,17 +34,17 @@
   @apply p-4;
 }
 
-.post pre > code {
+.post pre>code {
   @apply bg-transparent;
 }
 
-.post table {
+/* .post table {
   width: 100%;
   border-collapse: collapse;
 }
 
 .post table, .post th, .post td {
-  border: 1px solid #ccc; /* Lighter border for less visual weight */
+  border: 1px solid #ccc; 
 }
 
 .post th, .post td {
@@ -53,22 +53,21 @@
 }
 
 .post th {
-  background-color: #e6e6e6; /* A slightly darker shade for headers */
+  background-color: #e6e6e6;
   color: #333;
 }
 
 .post tr:nth-child(odd) {
-  background-color: #f7f7f7; /* A very light gray for odd rows */
-}
+  background-color: #f7f7f7;
 
 .post tr:nth-child(even) {
-  background-color: #eef2f5; /* A subtle blue-tinted gray for even rows */
+  background-color: #eef2f5; 
 }
 
 .post tr:hover {
-  background-color: #dfe3e8; /* A slightly darker shade for hover state */
+  background-color: #dfe3e8; 
 }
 
 .post td, .post th {
-  color: #333; /* Darker text for better readability */
-}
+  color: #333; 
+} */
